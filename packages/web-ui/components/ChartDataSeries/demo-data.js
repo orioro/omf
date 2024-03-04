@@ -1,0 +1,112 @@
+export const UNGROUPED = `ano,quantidade_vinculos_sum
+2003,4283173
+2004,4405315
+2005,4677714
+2006,4959558
+2007,5278107
+2008,5332400
+2009,5590502
+2010,5708876
+2011,5831504
+2012,5812024
+2013,5906552
+2014,6024552
+2015,5951828
+2016,5719488
+2017,5881099
+2018,5840716
+2019,5816874
+2020,5619761
+2021,5886006`
+
+export const GROUP_BY_ESFERA_DATA = `ano,quantidade_vinculos_sum,esfera
+2003,2564519,Estadual
+2003,482734,Federal
+2003,3545753,Municipal
+2003,738399,Outros
+2004,2622633,Estadual
+2004,524786,Federal
+2004,3566865,Municipal
+2004,755153,Outros
+2005,2710691,Estadual
+2005,550877,Federal
+2005,3953053,Municipal
+2005,748116,Outros
+2006,2763245,Estadual
+2006,605089,Federal
+2006,4214848,Municipal
+2006,763490,Outros
+2007,2926041,Estadual
+2007,734517,Federal
+2007,4471015,Municipal
+2007,776619,Outros
+2008,2995583,Estadual
+2008,663865,Federal
+2008,4494617,Municipal
+2008,791466,Outros
+2009,3023522,Estadual
+2009,682246,Federal
+2009,4907567,Municipal
+2009,793680,Outros
+2010,3147067,Estadual
+2010,700972,Federal
+2010,4936669,Municipal
+2010,828045,Outros
+2011,2944303,Estadual
+2011,739442,Federal
+2011,5295248,Municipal
+2011,857769,Outros
+2012,2930070,Estadual
+2012,738862,Federal
+2012,4952261,Municipal
+2012,992655,Outros
+2013,2801951,Estadual
+2013,758498,Federal
+2013,5424957,Municipal
+2013,905533,Outros
+2014,2870042,Estadual
+2014,779672,Federal
+2014,5454898,Municipal
+2014,915363,Outros
+2015,2785526,Estadual
+2015,778372,Federal
+2015,5456991,Municipal
+2015,921087,Outros
+2016,2745822,Estadual
+2016,770553,Federal
+2016,5083585,Municipal
+2016,888868,Outros
+2017,2675523,Estadual
+2017,798268,Federal
+2017,5462899,Municipal
+2017,881925,Outros
+2018,2638584,Estadual
+2018,737070,Federal
+2018,5530011,Municipal
+2018,839320,Outros
+2019,2514901,Estadual
+2019,787958,Federal
+2019,5619431,Municipal
+2019,800841,Outros
+2020,2643839,Estadual
+2020,679599,Federal
+2020,5177314,Municipal
+2020,765921,Outros
+2021,2562670,Estadual
+2021,672603,Federal
+2021,5778298,Municipal
+2021,748468,Outros`
+
+export const VIEW_SCHEMA = {
+  type: 'areas',
+  config: {
+    xAxis: {
+      label: 'Ano',
+      valueExpression: 'ano',
+    },
+    yAxis: {
+      label: 'Total de vínculos',
+      valueExpression: 'quantidade_vinculos_sum',
+    },
+  }
+}
