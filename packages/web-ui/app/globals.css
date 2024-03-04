@@ -1,0 +1,86 @@
+/*@import 'normalize.css';*/
+/*@import 'swiper/css';*/
+/*@import 'react-spring-bottom-sheet/dist/style.css';*/
+
+:root {
+  --content-max-width: 1440px;
+  --page-side-padding-desktop: 50px;
+  --page-side-padding-mobile: 20px;
+
+  /* Chart data colors */
+  --green: #b2d33e;
+  --pale-green: #75a344;
+  --dark-blue: #6633ff;
+  --blue: #1892cb;
+  --purple: #8650e8;
+  --orange: #d37802;
+  --grey: #666666;
+  --red: #de455c;
+
+  /* Support colors */
+  --light-grey: #c6c6c6;
+  --white: #ffffff;
+  --black: #000000;
+
+
+  /* Chart data colors */
+  --green: #b2d33e;
+  --pale-green: #75a344;
+  --dark-blue: #6633ff;
+  --blue: #1892cb;
+  --purple: #8650e8;
+  --orange: #d37802;
+  --grey: #666666;
+  --red: #de455c;
+
+  font-size: 16px;
+
+
+  --font-sans-serif: --font-plus-jakarta-sans;
+}
+
+@media (hover: hover) {
+  /**
+   * Only on devices that support hover (primarily, desktop)
+   */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: #efefef;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+  }
+}
+
+* {
+  box-sizing: border-box;
+/*  padding: 0;*/
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: var(--font-sans-serif);
+  line-height: 1.5;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
