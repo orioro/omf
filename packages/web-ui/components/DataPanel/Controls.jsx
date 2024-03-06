@@ -4,6 +4,7 @@ import { TuneSharp, Search } from '@mui/icons-material'
 import { AccessibleIcon } from '@radix-ui/themes'
 
 import { ControlMultiSelectPopover } from '../ControlMultiSelectPopover'
+import { CATEGORIES } from '@/data'
 
 export function Controls({ query, onSetQuery }) {
   return (
@@ -16,24 +17,12 @@ export function Controls({ query, onSetQuery }) {
             categories: nextValue,
           })
         }
-        options={[
-          'Cuidado e Assistência',
-          'Educação',
-          'Infraestrutura Urbana',
-          'Saúde',
-          'Trabalho e Renda',
-          'Política e Vida Pública',
-          'Violência',
-        ].map((opt) => ({
-          label: opt,
-          value: opt,
+        options={CATEGORIES.map((cat) => ({
+          label: cat.label,
+          value: cat.id,
         }))}
-      >
-        Filtros
-        <AccessibleIcon label="Abrir filtros">
-          <TuneSharp />
-        </AccessibleIcon>
-      </ControlMultiSelectPopover>
+        label="Categorias"
+      />
 
       <TextField.Root>
         <TextField.Input

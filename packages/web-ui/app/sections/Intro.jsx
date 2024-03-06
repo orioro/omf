@@ -4,6 +4,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 export function Intro({}) {
   return (
     <Section
+      id="inicio"
       style={{
         paddingTop: 90,
         backgroundColor: 'var(--roxo-light)',
@@ -30,7 +31,7 @@ export function Intro({}) {
               sm: '50%',
             }}
           >
-            <Heading size="9" as="h1" mb="8">
+            <Heading size={{ initial: '8', sm: '9' }} as="h1" mb="8">
               Observatório da Mulher de Fortaleza
             </Heading>
             <MarkdownContent>

@@ -42,7 +42,13 @@ const CHART_01 = {
 }
 
 const IND_06_GRAVIDEZ_ADOLESCENCIA = {
+  category: 'saude',
   label: 'Gravidez na Adolescência',
+  highlight: {
+    number: '2.433',
+    unit: 'meninas',
+    text: 'com 18 anos  ou menos deram à luz em Fortaleza em 2021.',
+  },
   charts: [CHART_01],
 }
 

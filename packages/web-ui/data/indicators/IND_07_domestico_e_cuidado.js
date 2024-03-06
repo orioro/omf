@@ -34,7 +34,13 @@ const CHART_01 = {
 }
 
 const IND_07_DOMESTICO_CUIDADO = {
+  category: 'cuidado',
   label: 'Trabalho doméstico e de cuidado',
+  highlight: {
+    number: '10,3',
+    unit: 'h/semanais',
+    text: 'gastas a mais por mulheres em tarefas do lar do que homens.',
+  },
   charts: [CHART_01],
 }
 

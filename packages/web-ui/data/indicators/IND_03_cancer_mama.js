@@ -34,7 +34,13 @@ const CHART_01 = {
 }
 
 const IND_03_cancer_mama = {
+  category: 'saude',
   label: 'Câncer de mama',
+  highlight: {
+    number: '1.248',
+    unit: 'mulheres',
+    text: 'diagnosticadas com câncer de mama em 2020 em Fortaleza.',
+  },
   charts: [CHART_01],
 }
 

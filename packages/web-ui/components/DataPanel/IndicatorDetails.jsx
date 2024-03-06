@@ -1,6 +1,13 @@
 import { Heading } from '@radix-ui/themes'
 import { DataView } from '../DataView'
 import { DefaultTheme } from '../DefaultTheme'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  > * + * {
+    margin-top: 30px;
+  }
+`
 
 export function IndicatorDetails({ indicator }) {
   return (
@@ -10,13 +17,13 @@ export function IndicatorDetails({ indicator }) {
       scaling="100%"
       radius="small"
     >
-      <div>
+      <Container>
         <Heading as="h2">{indicator.label}</Heading>
 
         {indicator.charts.map((spec, index) => (
           <DataView key={index} spec={spec} />
         ))}
-      </div>
+      </Container>
     </DefaultTheme>
   )
 }

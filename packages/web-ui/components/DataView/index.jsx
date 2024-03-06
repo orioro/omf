@@ -6,7 +6,11 @@ import { useQuery } from '@tanstack/react-query'
 import { dsvFormat } from 'd3-dsv'
 import { ChartDataSeries, groupEntries } from '../ChartDataSeries'
 
-const Container = styled.div``
+const Container = styled.div`
+  > * + * {
+    margin-top: 20px;
+  }
+`
 
 function _entryMatchesQuery({ entry, queryControls = {}, query }) {
   return Object.keys(queryControls).every((key) => {

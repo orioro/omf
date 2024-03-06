@@ -1,11 +1,3 @@
-function _isNumeric(str) {
-  if (typeof str != 'string') return false // we only process strings!
-  return (
-    !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
-    !isNaN(parseFloat(str))
-  ) // ...and ensure strings of whitespace fail
-}
-
 const CHART_01 = {
   label: 'Mortalidade materna por local, a cada 100 mil nascidos vivos',
   queryControls: {
@@ -87,8 +79,13 @@ const CHART_02 = {
 
 const IND_01_mortalidade_materna = {
   label: 'Mortalidade materna',
-  categories: ['saude'],
-  summary:
+  category: 'saude',
+  highlight: {
+    number: '76',
+    unit: 'mortes',
+    text: 'maternas a cada 100 mil nascidos vivos em 2021'
+  },
+  leadText:
     'Quantas mulheres morrem durante a gravidez, o parto ou até 42 dias após o término da gestação, a cada 100 mil bebês nascidos vivos em Fortaleza?',
   badges: [
     {
@@ -111,6 +108,10 @@ const IND_01_mortalidade_materna = {
     **Como melhorar o indicador de mortalidade materna?**
     Para melhorar esse indicador, é essencial garantir que todas as mulheres tenham acesso a cuidados médicos adequados durante a gravidez, incluindo consultas pré-natais regulares (no mínimo, seis consultas de pré-natal, sendo, preferencialmente, uma no primeiro trimestre, duas no segundo trimestre e três no terceiro trimestre da gestação) e assistência qualificada no momento do parto. Dessa forma, é possível trabalhar para reduzir o número de mortes maternas e garantir que mais mães tenham a oportunidade de vivenciar uma gravidez e parto saudáveis.
     A OMS estabeleceu como meta reduzir a taxa global de mortalidade materna para menos de 70 mortes a cada 100 mil nascidos até 2030. Hoje, em Fortaleza a taxa está em 76, e no Brasil 117 mortes para cada 100 mil nascidos vivos (2021).
+
+    **Por quê usar "a cada 100 mil nascidos vivos" quando falamos em taxa de mortalidade materna?**
+    Para falar sobre a taxa de mortalidade materna, utilizamos sempre como referência o número de 100 mil nascidos vivos (por exemplo, "30 mil mortes maternas a cada 100 mil nascidos vivos").
+    Utilizamos esse valor como referência para que seja possível comparar igualmente os números de mortes maternas entre lugares e populações diferentes.
   `,
 
   charts: [CHART_01, CHART_02],

@@ -58,7 +58,7 @@ function noGrouping({ yAxis }, srcEntries) {
     entries: srcEntries,
     groups: [
       {
-        label: yAxis.label,
+        // label: yAxis.label,
         dataKey: yAxis.dataKey,
         color: yAxis.color,
       },

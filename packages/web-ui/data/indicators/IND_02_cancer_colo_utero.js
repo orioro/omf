@@ -155,7 +155,13 @@ const CHART_05 = {
 }
 
 const IND_02_cancer_colo_utero = {
+  category: 'saude',
   label: 'Câncer de colo de útero',
+  highlight: {
+    number: '71%',
+    unit: 'das mortes',
+    text: 'por causa de câncer de colo de útero foram de pessoas pretas e pardas em 2022',
+  },
   charts: [CHART_01, CHART_02, CHART_03, CHART_04, CHART_05],
 }
 
