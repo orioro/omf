@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head></head>
       <body className={plus_jakarta_sans.className}>
         <StyledComponentsRegistry>

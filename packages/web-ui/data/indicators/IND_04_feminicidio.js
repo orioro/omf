@@ -22,7 +22,13 @@ const CHART_01 = {
 }
 
 const IND_04_feminicidio = {
+  category: 'violencia',
   label: 'Feminicídio',
+  highlight: {
+    number: '24%',
+    unit: 'das mortes',
+    text: 'por feminicídio no Ceará ocorreram em Fortaleza.',
+  },
   charts: [CHART_01],
 }
 

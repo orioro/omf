@@ -30,7 +30,13 @@ const CHART_01 = {
 }
 
 const IND_08_MULHERES_POLITICA = {
+  category: 'politica',
   label: 'Mulheres na política',
+  highlight: {
+    number: '7 das 9',
+    unit: 'eleitas',
+    text: 'na Câmara Municipal em 2020 eram mulheres pretas e pardas.',
+  },
   charts: [CHART_01],
 }
 

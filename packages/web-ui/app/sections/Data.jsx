@@ -6,6 +6,7 @@ import { DataPanel } from '@/components/DataPanel'
 export function Data() {
   return (
     <Section
+      id="dados"
       py="9"
       style={{
         backgroundColor: 'var(--roxo)',
@@ -21,7 +22,7 @@ export function Data() {
         <Grid container spacing={6}>
           <Grid md={8} display="flex" alignItems="center">
             <div>
-              <Heading size="9" as="h1" mb="8">
+              <Heading size="8" as="h2" mb="8">
                 O que os indicadores nos dizem sobre as mulheres de Fortaleza?
               </Heading>
               <MarkdownContent>
@@ -32,7 +33,7 @@ Ao clicar em cada cartão, é possível ver mais detalhes sobre aquele indicador
             </div>
           </Grid>
           <Grid md={4}>
-            <Box mr="-9" mt="-9" mb="-9">
+            <Box p="4">
               <img src="/img/home/ilustra_painel.png" />
             </Box>
           </Grid>

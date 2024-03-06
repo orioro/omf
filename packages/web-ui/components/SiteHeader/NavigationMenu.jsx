@@ -5,6 +5,10 @@ import classNames from 'classnames'
 
 const Container = styled.nav`
   display: flex;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `
 
 const LinkList = styled.ul`
@@ -48,10 +52,10 @@ const LinkList = styled.ul`
 `
 
 const LINKS = [
-  ['/#', 'Início'],
+  ['/#inicio', 'Início'],
   ['/#dados', 'Painel de Dados'],
-  ['/metodologia', 'Metodologia'],
-  ['/biblioteca', 'Biblioteca'],
+  ['/#', 'Metodologia'],
+  ['/#', 'Biblioteca'],
   ['/#parcerias', 'Parcerias'],
 ]
 
@@ -59,8 +63,8 @@ export function NavigationMenu({}) {
   return (
     <Container>
       <LinkList>
-        {LINKS.map(([href, label]) => (
-          <li key={href}>
+        {LINKS.map(([href, label], index) => (
+          <li key={index}>
             <Link
               href={href}
               className={classNames({
@@ -74,7 +78,7 @@ export function NavigationMenu({}) {
       </LinkList>
 
       <Button asChild color="mostarda" style={{ fontWeight: 'bold' }}>
-        <Link href="/servicos">Serviços para Mulheres</Link>
+        <Link href="/#">Serviços para Mulheres</Link>
       </Button>
     </Container>
   )

@@ -55,7 +55,13 @@ const CHART_01 = {
 }
 
 const IND_09_ESCOLARIZACAO = {
+  category: 'educacao',
   label: 'Taxa de escolarização',
+  highlight: {
+    number: '90%',
+    unit: 'das meninas',
+    text: 'de 15 a 17 anos em Fortaleza eram estudantes em 2022.',
+  },
   charts: [CHART_01],
 }
 
