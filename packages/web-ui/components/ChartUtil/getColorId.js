@@ -1,12 +1,10 @@
 const COLOR_ORDER = [
-  'green',
-  'dark-blue',
-  'red',
-  'pale-green',
-  'purple',
-  'orange',
-  'blue',
-  'grey',
+  'roxo',
+  'mostarda',
+  'salmao',
+  'verde',
+  'toranja',
+  // 'azul',
 ]
 
 export function getColorId(index) {

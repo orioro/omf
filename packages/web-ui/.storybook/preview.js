@@ -1,5 +1,5 @@
 import '@radix-ui/themes/styles.css'
-import '../app/globals.css'
+import '../app/styles/globals.css'
 import { Theme, ThemePanel } from '@radix-ui/themes'
 
 import { Plus_Jakarta_Sans } from 'next/font/google'

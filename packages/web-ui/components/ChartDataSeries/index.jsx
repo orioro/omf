@@ -15,6 +15,15 @@ import {
 import deepmerge from 'deepmerge'
 import { omit } from 'lodash'
 
+// Override console.error
+// This is a hack to suppress the warning about missing defaultProps in recharts library as of version 2.12
+// @link https://github.com/recharts/recharts/issues/3615
+const error = console.error
+console.error = (...args) => {
+  if (/defaultProps/.test(args[0])) return
+  error(...args)
+}
+
 function renderBars({ groups }) {
   return groups.map((group, index) => (
     <Bar
@@ -79,7 +88,10 @@ const _percentarenderTooltipContent = (o) => {
       <ul className="list">
         {payload.map((entry, index) => (
           <li key={`item-${index}`} style={{ color: entry.color }}>
-            {`${entry.name}: ${entry.value} (${getPercent(entry.value, total)})`}
+            {`${entry.name}: ${entry.value} (${getPercent(
+              entry.value,
+              total
+            )})`}
           </li>
         ))}
       </ul>
@@ -161,7 +173,11 @@ export function ChartDataSeries({
 
   return (
     <ChartContainer style={{ fontSize: '.875rem' }} alwaysActive={alwaysActive}>
-      <ComposedChart {...chartProps} data={entries} stackOffset="expand">
+      <ComposedChart
+        {...chartProps}
+        data={entries}
+        stackOffset={renderer === 'percentage_areas' ? 'expand' : undefined}
+      >
         <CartesianGrid strokeDasharray="3 3" />
         <Legend verticalAlign="top" height={lines * LEGEND_LINE_HEIGHT} />
         <XAxis {...xAxisProps} />
