@@ -1,38 +1,11 @@
 /*@import 'normalize.css';*/
 /*@import 'swiper/css';*/
-/*@import 'react-spring-bottom-sheet/dist/style.css';*/
+@import 'react-spring-bottom-sheet/dist/style.css';
 
 :root {
   --content-max-width: 1440px;
   --page-side-padding-desktop: 50px;
   --page-side-padding-mobile: 20px;
-
-  /* Chart data colors */
-  --green: #b2d33e;
-  --pale-green: #75a344;
-  --dark-blue: #6633ff;
-  --blue: #1892cb;
-  --purple: #8650e8;
-  --orange: #d37802;
-  --grey: #666666;
-  --red: #de455c;
-
-  /* Support colors */
-  --light-grey: #c6c6c6;
-  --white: #ffffff;
-  --black: #000000;
-
-
-  /* Chart data colors */
-  --green: #b2d33e;
-  --pale-green: #75a344;
-  --dark-blue: #6633ff;
-  --blue: #1892cb;
-  --purple: #8650e8;
-  --orange: #d37802;
-  --grey: #666666;
-  --red: #de455c;
-
   font-size: 16px;
 
 

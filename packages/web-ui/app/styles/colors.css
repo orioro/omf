@@ -1,0 +1,227 @@
+:root {
+  --roxo: rgba(33, 24, 135, 1);
+  --roxo-light: rgba(71, 62, 173, 1);
+  --roxo-bg: rgba(177, 174, 223, 1);
+  --roxo-contrast: white;
+}
+[data-accent-color='roxo'] {
+  --accent-1: var(--roxo-bg);
+  --accent-2: var(--roxo-bg);
+  --accent-3: var(--roxo-bg);
+  --accent-4: var(--roxo-bg);
+  --accent-5: var(--roxo-bg);
+  --accent-6: var(--roxo-light);
+  --accent-7: var(--roxo-light);
+  --accent-8: var(--roxo-light);
+  --accent-9: var(--roxo);
+  --accent-10: var(--roxo);
+  --accent-11: var(--roxo);
+  --accent-12: var(--roxo);
+  --accent-a1: var(--roxo-bg);
+  --accent-a2: var(--roxo-bg);
+  --accent-a3: var(--roxo-bg);
+  --accent-a4: var(--roxo-bg);
+  --accent-a5: var(--roxo-bg);
+  --accent-a6: var(--roxo-light);
+  --accent-a7: var(--roxo-light);
+  --accent-a8: var(--roxo-light);
+  --accent-a9: var(--roxo);
+  --accent-a10: var(--roxo);
+  --accent-a11: var(--roxo);
+  --accent-a12: var(--roxo);
+  --accent-contrast: var(--roxo-contrast);
+  --accent-9-contrast: var(--roxo-contrast);
+  --accent-surface: var(--roxo-bg);
+  --accent-indicator: var(--roxo);
+  --accent-track: var(--roxo-light);
+}
+
+:root {
+  --mostarda: rgba(252, 185, 85, 1);
+  --mostarda-light: rgba(255, 205, 159, 1);
+  --mostarda-bg: rgba(255, 240, 233, 1);
+  --mostarda-contrast: black;
+}
+[data-accent-color='mostarda'] {
+  --accent-1: var(--mostarda-bg);
+  --accent-2: var(--mostarda-bg);
+  --accent-3: var(--mostarda-bg);
+  --accent-4: var(--mostarda-bg);
+  --accent-5: var(--mostarda-bg);
+  --accent-6: var(--mostarda-light);
+  --accent-7: var(--mostarda-light);
+  --accent-8: var(--mostarda-light);
+  --accent-9: var(--mostarda);
+  --accent-10: var(--mostarda);
+  --accent-11: var(--mostarda);
+  --accent-12: var(--mostarda);
+  --accent-a1: var(--mostarda-bg);
+  --accent-a2: var(--mostarda-bg);
+  --accent-a3: var(--mostarda-bg);
+  --accent-a4: var(--mostarda-bg);
+  --accent-a5: var(--mostarda-bg);
+  --accent-a6: var(--mostarda-light);
+  --accent-a7: var(--mostarda-light);
+  --accent-a8: var(--mostarda-light);
+  --accent-a9: var(--mostarda);
+  --accent-a10: var(--mostarda);
+  --accent-a11: var(--mostarda);
+  --accent-a12: var(--mostarda);
+  --accent-contrast: var(--mostarda-contrast);
+  --accent-9-contrast: var(--mostarda-contrast);
+  --accent-surface: var(--mostarda-bg);
+  --accent-indicator: var(--mostarda);
+  --accent-track: var(--mostarda-light);
+}
+
+:root {
+  --salmao: rgba(243, 86, 114, 1);
+  --salmao-light: rgba(255, 140, 137, 1);
+  --salmao-bg: rgba(255, 203, 203, 1);
+  --salmao-contrast: white;
+}
+[data-accent-color='salmao'] {
+  --accent-1: var(--salmao-bg);
+  --accent-2: var(--salmao-bg);
+  --accent-3: var(--salmao-bg);
+  --accent-4: var(--salmao-bg);
+  --accent-5: var(--salmao-bg);
+  --accent-6: var(--salmao-light);
+  --accent-7: var(--salmao-light);
+  --accent-8: var(--salmao-light);
+  --accent-9: var(--salmao);
+  --accent-10: var(--salmao);
+  --accent-11: var(--salmao);
+  --accent-12: var(--salmao);
+  --accent-a1: var(--salmao-bg);
+  --accent-a2: var(--salmao-bg);
+  --accent-a3: var(--salmao-bg);
+  --accent-a4: var(--salmao-bg);
+  --accent-a5: var(--salmao-bg);
+  --accent-a6: var(--salmao-light);
+  --accent-a7: var(--salmao-light);
+  --accent-a8: var(--salmao-light);
+  --accent-a9: var(--salmao);
+  --accent-a10: var(--salmao);
+  --accent-a11: var(--salmao);
+  --accent-a12: var(--salmao);
+  --accent-contrast: var(--salmao-contrast);
+  --accent-9-contrast: var(--salmao-contrast);
+  --accent-surface: var(--salmao-bg);
+  --accent-indicator: var(--salmao);
+  --accent-track: var(--salmao-light);
+}
+
+:root {
+  --verde: rgba(17, 179, 159, 1);
+  --verde-light: rgba(94, 202, 189, 1);
+  --verde-bg: rgba(149, 232, 220, 1);
+  --verde-contrast: white;
+}
+[data-accent-color='verde'] {
+  --accent-1: var(--verde-bg);
+  --accent-2: var(--verde-bg);
+  --accent-3: var(--verde-bg);
+  --accent-4: var(--verde-bg);
+  --accent-5: var(--verde-bg);
+  --accent-6: var(--verde-light);
+  --accent-7: var(--verde-light);
+  --accent-8: var(--verde-light);
+  --accent-9: var(--verde);
+  --accent-10: var(--verde);
+  --accent-11: var(--verde);
+  --accent-12: var(--verde);
+  --accent-a1: var(--verde-bg);
+  --accent-a2: var(--verde-bg);
+  --accent-a3: var(--verde-bg);
+  --accent-a4: var(--verde-bg);
+  --accent-a5: var(--verde-bg);
+  --accent-a6: var(--verde-light);
+  --accent-a7: var(--verde-light);
+  --accent-a8: var(--verde-light);
+  --accent-a9: var(--verde);
+  --accent-a10: var(--verde);
+  --accent-a11: var(--verde);
+  --accent-a12: var(--verde);
+  --accent-contrast: var(--verde-contrast);
+  --accent-9-contrast: var(--verde-contrast);
+  --accent-surface: var(--verde-bg);
+  --accent-indicator: var(--verde);
+  --accent-track: var(--verde-light);
+}
+
+:root {
+  --toranja: rgba(244, 113, 76, 1);
+  --toranja-light: rgba(255, 152, 132, 1);
+  --toranja-bg: rgba(255, 201, 187, 1);
+  --toranja-contrast: white;
+}
+[data-accent-color='toranja'] {
+  --accent-1: var(--toranja-bg);
+  --accent-2: var(--toranja-bg);
+  --accent-3: var(--toranja-bg);
+  --accent-4: var(--toranja-bg);
+  --accent-5: var(--toranja-bg);
+  --accent-6: var(--toranja-light);
+  --accent-7: var(--toranja-light);
+  --accent-8: var(--toranja-light);
+  --accent-9: var(--toranja);
+  --accent-10: var(--toranja);
+  --accent-11: var(--toranja);
+  --accent-12: var(--toranja);
+  --accent-a1: var(--toranja-bg);
+  --accent-a2: var(--toranja-bg);
+  --accent-a3: var(--toranja-bg);
+  --accent-a4: var(--toranja-bg);
+  --accent-a5: var(--toranja-bg);
+  --accent-a6: var(--toranja-light);
+  --accent-a7: var(--toranja-light);
+  --accent-a8: var(--toranja-light);
+  --accent-a9: var(--toranja);
+  --accent-a10: var(--toranja);
+  --accent-a11: var(--toranja);
+  --accent-a12: var(--toranja);
+  --accent-contrast: var(--toranja-contrast);
+  --accent-9-contrast: var(--toranja-contrast);
+  --accent-surface: var(--toranja-bg);
+  --accent-indicator: var(--toranja);
+  --accent-track: var(--toranja-light);
+}
+
+:root {
+  --azul: rgba(242, 241, 255, 1);
+  --azul-light: rgba(242, 241, 255, 1);
+  --azul-bg: rgba(242, 241, 255, 1);
+  --azul-contrast: white;
+}
+[data-accent-color='azul'] {
+  --accent-1: var(--azul-bg);
+  --accent-2: var(--azul-bg);
+  --accent-3: var(--azul-bg);
+  --accent-4: var(--azul-bg);
+  --accent-5: var(--azul-bg);
+  --accent-6: var(--azul-light);
+  --accent-7: var(--azul-light);
+  --accent-8: var(--azul-light);
+  --accent-9: var(--azul);
+  --accent-10: var(--azul);
+  --accent-11: var(--azul);
+  --accent-12: var(--azul);
+  --accent-a1: var(--azul-bg);
+  --accent-a2: var(--azul-bg);
+  --accent-a3: var(--azul-bg);
+  --accent-a4: var(--azul-bg);
+  --accent-a5: var(--azul-bg);
+  --accent-a6: var(--azul-light);
+  --accent-a7: var(--azul-light);
+  --accent-a8: var(--azul-light);
+  --accent-a9: var(--azul);
+  --accent-a10: var(--azul);
+  --accent-a11: var(--azul);
+  --accent-a12: var(--azul);
+  --accent-contrast: var(--azul-contrast);
+  --accent-9-contrast: var(--azul-contrast);
+  --accent-surface: var(--azul-bg);
+  --accent-indicator: var(--azul);
+  --accent-track: var(--azul-light);
+}
