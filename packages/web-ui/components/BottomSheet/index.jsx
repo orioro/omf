@@ -14,8 +14,8 @@ const BottomSheet_ = styled(BottomSheet__)`
   --rsbs-overlay-rounded: 16px;
 
   @media (hover: hover) {
-    *::-webkit-scrollbar-thumb {
-      background-color: var(--grey);
+    *::-webkit-scrollbar-thumb:hover {
+      background-color: var(--roxo-light);
     }
   }
 `
@@ -75,7 +75,7 @@ export function BottomSheet({ isOpen, onSetIsOpen, children, ...props }) {
     >
       <ContentContainer>
         <CloseButton type="button" onClick={() => onSetIsOpen(false)}>
-          <Close />
+          <Close style={{ color: 'var(--roxo)' }} />
         </CloseButton>
         {children}
       </ContentContainer>

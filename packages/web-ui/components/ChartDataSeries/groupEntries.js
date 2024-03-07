@@ -1,10 +1,17 @@
 import { uniq } from 'lodash'
+import { parseNumber } from './parseNumber'
 
 function prepareSrcEntries({ yAxis }, srcEntries) {
   return srcEntries.map((srcEntry) => ({
     ...srcEntry,
     // yAxis is always a numerical value
-    [yAxis.dataKey]: parseFloat(srcEntry[yAxis.dataKey]),
+    // [yAxis.dataKey]: parseFloat(srcEntry[yAxis.dataKey]),
+    [yAxis.dataKey]:
+      typeof srcEntry[yAxis.dataKey] === 'number'
+        ? srcEntry[yAxis.dataKey]
+        : typeof srcEntry[yAxis.dataKey] === 'string'
+        ? parseNumber(srcEntry[yAxis.dataKey])
+        : null,
   }))
 }
 

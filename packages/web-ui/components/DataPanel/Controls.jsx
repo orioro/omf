@@ -11,6 +11,9 @@ export function Controls({ query, onSetQuery }) {
     <Flex gap="3">
       <ControlMultiSelectPopover
         value={query.categories}
+        buttonProps={{
+          color: 'mostarda',
+        }}
         onSetValue={(nextValue) =>
           onSetQuery({
             ...query,
