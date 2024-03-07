@@ -29,6 +29,10 @@ export function QueryControls({ spec, data, value, onSetValue }) {
         {Object.keys(spec).map((key) => {
           const keySpec = spec[key]
 
+          if (keySpec.hidden) {
+            return null
+          }
+
           switch (keySpec.type) {
             case 'multiple': {
               const options = _fmtOptions({

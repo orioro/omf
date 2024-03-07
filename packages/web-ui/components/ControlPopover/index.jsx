@@ -1,3 +1,4 @@
+import { Tune } from '@mui/icons-material'
 import { Button, Popover, AccessibleIcon } from '@radix-ui/themes'
 // import { InputCheckboxList } from '../InputCheckboxList'
 import { useState } from 'react'
@@ -8,6 +9,9 @@ export function ControlPopover({
   renderControl,
   children,
   label,
+
+  buttonProps = {},
+
   ...props
 }) {
   const [open, setIsOpen] = useState(false)
@@ -24,12 +28,15 @@ export function ControlPopover({
       }}
     >
       <Popover.Trigger>
-        <Button color="mostarda">
+        <Button {...buttonProps}>
           {typeof label === 'function'
             ? label({
                 value,
               })
             : label}
+          <AccessibleIcon label="Abrir filtros">
+            <Tune />
+          </AccessibleIcon>
         </Button>
       </Popover.Trigger>
       <Popover.Content
@@ -49,7 +56,7 @@ export function ControlPopover({
             onSetLocalValue: setLocalValue,
             ...props,
           })}
-          <Button type="submit">Aplicar</Button>
+          <Button mt="4" type="submit">Aplicar</Button>
         </form>
       </Popover.Content>
     </Popover.Root>

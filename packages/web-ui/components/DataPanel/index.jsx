@@ -49,7 +49,6 @@ export function DataPanel({}) {
       </Flex>
 
       <BottomSheet
-        // isOpen={true}
         isOpen={Boolean(activeIndicatorId)}
         onSetIsOpen={(nextIsOpen) => {
           if (!nextIsOpen) {

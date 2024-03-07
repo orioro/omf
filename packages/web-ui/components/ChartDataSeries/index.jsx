@@ -70,7 +70,7 @@ const RENDERERS = {
   lines: renderLines,
 }
 
-const toPercent = (decimal, fixed = 0) => `${(decimal * 100).toFixed(fixed)}%`
+const toPercent = (decimal, fixed = 2) => `${(decimal * 100).toFixed(fixed)}%`
 
 const getPercent = (value, total) => {
   const ratio = total > 0 ? value / total : 0
@@ -155,6 +155,12 @@ export function ChartDataSeries({
 }) {
   const render = typeof renderer === 'string' ? RENDERERS[renderer] : renderer
 
+  numberFormat =
+    numberFormat || renderer === 'percentage_areas'
+      ? {
+          style: 'percent',
+        }
+      : undefined
   const fmtNumber = (value) =>
     Intl.NumberFormat('pt-BR', numberFormat).format(value)
 

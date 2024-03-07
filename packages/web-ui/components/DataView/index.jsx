@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { dsvFormat } from 'd3-dsv'
 import { ChartDataSeries, groupEntries } from '../ChartDataSeries'
+import { Details } from './Details'
 
 const Container = styled.div`
   > * + * {
@@ -36,7 +37,7 @@ function _entryMatchesQuery({ entry, queryControls = {}, query }) {
   })
 }
 
-export function DataView({ spec }) {
+export function DataView({ spec, additionalChartOptions = {} }) {
   const { label, queryControls, xAxis, yAxis, groupByKey } = spec
 
   const [query, setQuery] = useState(
@@ -88,9 +89,12 @@ export function DataView({ spec }) {
 
   return (
     <Container>
-      <Heading as="h3" size="4">
-        {label}
-      </Heading>
+      <div>
+        <Heading as="h3" size="4">
+          {label}
+        </Heading>
+        <span style={{ fontSize: '.8rem' }}>Fonte: {spec.source}</span>
+      </div>
 
       {queryControls && dataQuery.data && (
         <QueryControls
@@ -101,7 +105,16 @@ export function DataView({ spec }) {
         />
       )}
 
-      {chartOptions && <ChartDataSeries renderer={spec.renderer} {...chartOptions} />}
+      {chartOptions && (
+        <ChartDataSeries
+          renderer={spec.renderer}
+          {...spec}
+          {...chartOptions}
+          {...additionalChartOptions}
+        />
+      )}
+
+      <Details description={spec.description} downloadUrl={spec.data.src} />
     </Container>
   )
 }

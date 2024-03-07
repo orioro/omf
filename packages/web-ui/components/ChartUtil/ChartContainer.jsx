@@ -11,7 +11,7 @@ const Container = styled.div`
 export function ChartContainer({ children, alwaysActive = false, ...props }) {
   const containerRef = useRef()
   const { inViewport, enterCount } = useInViewport(containerRef, {
-    threshold: 0.9,
+    threshold: 0.6,
   })
 
   return (
