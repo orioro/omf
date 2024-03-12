@@ -1,0 +1,481 @@
+local,ano,genero,taxa_escolarizacao,grupo_idade
+Brasil,2016,Total,"28,4%",Total
+Brasil,2016,Masc,"29,0%",Total
+Brasil,2016,Fem,"27,8%",Total
+Brasil,2017,Total,"28,1%",Total
+Brasil,2017,Masc,"28,7%",Total
+Brasil,2017,Fem,"27,5%",Total
+Brasil,2018,Total,"28,1%",Total
+Brasil,2018,Masc,"28,6%",Total
+Brasil,2018,Fem,"27,7%",Total
+Brasil,2019,Total,"27,8%",Total
+Brasil,2019,Masc,"28,4%",Total
+Brasil,2019,Fem,"27,3%",Total
+Brasil,2022,Total,"27,2%",Total
+Brasil,2022,Masc,"27,6%",Total
+Brasil,2022,Fem,"26,9%",Total
+Brasil,2016,Total,"50,1%",0 a 5 anos
+Brasil,2016,Masc,"50,2%",0 a 5 anos
+Brasil,2016,Fem,"50,0%",0 a 5 anos
+Brasil,2017,Total,"52,4%",0 a 5 anos
+Brasil,2017,Masc,"52,1%",0 a 5 anos
+Brasil,2017,Fem,"52,6%",0 a 5 anos
+Brasil,2018,Total,"53,6%",0 a 5 anos
+Brasil,2018,Masc,"53,7%",0 a 5 anos
+Brasil,2018,Fem,"53,6%",0 a 5 anos
+Brasil,2019,Total,"54,9%",0 a 5 anos
+Brasil,2019,Masc,"54,8%",0 a 5 anos
+Brasil,2019,Fem,"55,1%",0 a 5 anos
+Brasil,2022,Total,"55,3%",0 a 5 anos
+Brasil,2022,Masc,"54,8%",0 a 5 anos
+Brasil,2022,Fem,"55,9%",0 a 5 anos
+Brasil,2016,Total,"30,3%",0 a 3 anos
+Brasil,2016,Masc,"30,3%",0 a 3 anos
+Brasil,2016,Fem,"30,3%",0 a 3 anos
+Brasil,2017,Total,"32,7%",0 a 3 anos
+Brasil,2017,Masc,"32,3%",0 a 3 anos
+Brasil,2017,Fem,"33,1%",0 a 3 anos
+Brasil,2018,Total,"34,1%",0 a 3 anos
+Brasil,2018,Masc,"34,5%",0 a 3 anos
+Brasil,2018,Fem,"33,7%",0 a 3 anos
+Brasil,2019,Total,"35,5%",0 a 3 anos
+Brasil,2019,Masc,"35,0%",0 a 3 anos
+Brasil,2019,Fem,"36,1%",0 a 3 anos
+Brasil,2022,Total,"36,0%",0 a 3 anos
+Brasil,2022,Masc,"35,8%",0 a 3 anos
+Brasil,2022,Fem,"36,2%",0 a 3 anos
+Brasil,2016,Total,"90,0%",4 a 5 anos
+Brasil,2016,Masc,"89,6%",4 a 5 anos
+Brasil,2016,Fem,"90,5%",4 a 5 anos
+Brasil,2017,Total,"91,5%",4 a 5 anos
+Brasil,2017,Masc,"91,1%",4 a 5 anos
+Brasil,2017,Fem,"92,0%",4 a 5 anos
+Brasil,2018,Total,"92,2%",4 a 5 anos
+Brasil,2018,Masc,"91,8%",4 a 5 anos
+Brasil,2018,Fem,"92,7%",4 a 5 anos
+Brasil,2019,Total,"92,7%",4 a 5 anos
+Brasil,2019,Masc,"92,8%",4 a 5 anos
+Brasil,2019,Fem,"92,6%",4 a 5 anos
+Brasil,2022,Total,"91,5%",4 a 5 anos
+Brasil,2022,Masc,"91,3%",4 a 5 anos
+Brasil,2022,Fem,"91,8%",4 a 5 anos
+Brasil,2016,Total,"99,2%",6 a 14 anos
+Brasil,2016,Masc,"99,1%",6 a 14 anos
+Brasil,2016,Fem,"99,3%",6 a 14 anos
+Brasil,2017,Total,"99,2%",6 a 14 anos
+Brasil,2017,Masc,"99,1%",6 a 14 anos
+Brasil,2017,Fem,"99,3%",6 a 14 anos
+Brasil,2018,Total,"99,3%",6 a 14 anos
+Brasil,2018,Masc,"99,2%",6 a 14 anos
+Brasil,2018,Fem,"99,5%",6 a 14 anos
+Brasil,2019,Total,"99,3%",6 a 14 anos
+Brasil,2019,Masc,"99,1%",6 a 14 anos
+Brasil,2019,Fem,"99,4%",6 a 14 anos
+Brasil,2022,Total,"99,4%",6 a 14 anos
+Brasil,2022,Masc,"99,2%",6 a 14 anos
+Brasil,2022,Fem,"99,5%",6 a 14 anos
+Brasil,2016,Total,"86,9%",15 a 17 anos
+Brasil,2016,Masc,"87,3%",15 a 17 anos
+Brasil,2016,Fem,"86,6%",15 a 17 anos
+Brasil,2017,Total,"86,9%",15 a 17 anos
+Brasil,2017,Masc,"87,3%",15 a 17 anos
+Brasil,2017,Fem,"86,4%",15 a 17 anos
+Brasil,2018,Total,"87,9%",15 a 17 anos
+Brasil,2018,Masc,"88,0%",15 a 17 anos
+Brasil,2018,Fem,"87,8%",15 a 17 anos
+Brasil,2019,Total,"89,0%",15 a 17 anos
+Brasil,2019,Masc,"89,5%",15 a 17 anos
+Brasil,2019,Fem,"88,4%",15 a 17 anos
+Brasil,2022,Total,"92,2%",15 a 17 anos
+Brasil,2022,Masc,"91,9%",15 a 17 anos
+Brasil,2022,Fem,"92,5%",15 a 17 anos
+Brasil,2016,Total,"31,5%",18 a 24 anos
+Brasil,2016,Masc,"30,5%",18 a 24 anos
+Brasil,2016,Fem,"32,5%",18 a 24 anos
+Brasil,2017,Total,"30,5%",18 a 24 anos
+Brasil,2017,Masc,"29,9%",18 a 24 anos
+Brasil,2017,Fem,"31,1%",18 a 24 anos
+Brasil,2018,Total,"31,5%",18 a 24 anos
+Brasil,2018,Masc,"30,4%",18 a 24 anos
+Brasil,2018,Fem,"32,7%",18 a 24 anos
+Brasil,2019,Total,"31,1%",18 a 24 anos
+Brasil,2019,Masc,"29,7%",18 a 24 anos
+Brasil,2019,Fem,"32,6%",18 a 24 anos
+Brasil,2022,Total,"30,4%",18 a 24 anos
+Brasil,2022,Masc,"28,1%",18 a 24 anos
+Brasil,2022,Fem,"32,6%",18 a 24 anos
+Brasil,2016,Total,"4,4%",25 anos ou mais
+Brasil,2016,Masc,"3,9%",25 anos ou mais
+Brasil,2016,Fem,"4,9%",25 anos ou mais
+Brasil,2017,Total,"4,5%",25 anos ou mais
+Brasil,2017,Masc,"4,0%",25 anos ou mais
+Brasil,2017,Fem,"5,0%",25 anos ou mais
+Brasil,2018,Total,"4,9%",25 anos ou mais
+Brasil,2018,Masc,"4,3%",25 anos ou mais
+Brasil,2018,Fem,"5,4%",25 anos ou mais
+Brasil,2019,Total,"4,8%",25 anos ou mais
+Brasil,2019,Masc,"4,3%",25 anos ou mais
+Brasil,2019,Fem,"5,2%",25 anos ou mais
+Brasil,2022,Total,"5,1%",25 anos ou mais
+Brasil,2022,Masc,"4,4%",25 anos ou mais
+Brasil,2022,Fem,"5,6%",25 anos ou mais
+Nordeste,2016,Total,"30,4%",Total
+Nordeste,2016,Masc,"30,9%",Total
+Nordeste,2016,Fem,"29,8%",Total
+Nordeste,2017,Total,"29,9%",Total
+Nordeste,2017,Masc,"30,7%",Total
+Nordeste,2017,Fem,"29,0%",Total
+Nordeste,2018,Total,"29,8%",Total
+Nordeste,2018,Masc,"30,5%",Total
+Nordeste,2018,Fem,"29,1%",Total
+Nordeste,2019,Total,"29,5%",Total
+Nordeste,2019,Masc,"30,3%",Total
+Nordeste,2019,Fem,"28,8%",Total
+Nordeste,2022,Total,"28,2%",Total
+Nordeste,2022,Masc,"28,9%",Total
+Nordeste,2022,Fem,"27,7%",Total
+Nordeste,2016,Total,"49,7%",0 a 5 anos
+Nordeste,2016,Masc,"48,8%",0 a 5 anos
+Nordeste,2016,Fem,"50,5%",0 a 5 anos
+Nordeste,2017,Total,"51,3%",0 a 5 anos
+Nordeste,2017,Masc,"51,5%",0 a 5 anos
+Nordeste,2017,Fem,"51,1%",0 a 5 anos
+Nordeste,2018,Total,"52,2%",0 a 5 anos
+Nordeste,2018,Masc,"52,6%",0 a 5 anos
+Nordeste,2018,Fem,"51,8%",0 a 5 anos
+Nordeste,2019,Total,"53,0%",0 a 5 anos
+Nordeste,2019,Masc,"52,3%",0 a 5 anos
+Nordeste,2019,Fem,"53,6%",0 a 5 anos
+Nordeste,2022,Total,"53,1%",0 a 5 anos
+Nordeste,2022,Masc,"53,4%",0 a 5 anos
+Nordeste,2022,Fem,"52,7%",0 a 5 anos
+Nordeste,2016,Total,"27,0%",0 a 3 anos
+Nordeste,2016,Masc,"26,1%",0 a 3 anos
+Nordeste,2016,Fem,"27,9%",0 a 3 anos
+Nordeste,2017,Total,"28,6%",0 a 3 anos
+Nordeste,2017,Masc,"28,7%",0 a 3 anos
+Nordeste,2017,Fem,"28,4%",0 a 3 anos
+Nordeste,2018,Total,"30,4%",0 a 3 anos
+Nordeste,2018,Masc,"30,9%",0 a 3 anos
+Nordeste,2018,Fem,"29,8%",0 a 3 anos
+Nordeste,2019,Total,"31,2%",0 a 3 anos
+Nordeste,2019,Masc,"30,2%",0 a 3 anos
+Nordeste,2019,Fem,"32,1%",0 a 3 anos
+Nordeste,2022,Total,"32,2%",0 a 3 anos
+Nordeste,2022,Masc,"31,9%",0 a 3 anos
+Nordeste,2022,Fem,"32,6%",0 a 3 anos
+Nordeste,2016,Total,"94,1%",4 a 5 anos
+Nordeste,2016,Masc,"93,5%",4 a 5 anos
+Nordeste,2016,Fem,"94,7%",4 a 5 anos
+Nordeste,2017,Total,"94,7%",4 a 5 anos
+Nordeste,2017,Masc,"94,7%",4 a 5 anos
+Nordeste,2017,Fem,"94,6%",4 a 5 anos
+Nordeste,2018,Total,"95,3%",4 a 5 anos
+Nordeste,2018,Masc,"95,7%",4 a 5 anos
+Nordeste,2018,Fem,"95,0%",4 a 5 anos
+Nordeste,2019,Total,"95,6%",4 a 5 anos
+Nordeste,2019,Masc,"95,4%",4 a 5 anos
+Nordeste,2019,Fem,"95,7%",4 a 5 anos
+Nordeste,2022,Total,"93,6%",4 a 5 anos
+Nordeste,2022,Masc,"93,7%",4 a 5 anos
+Nordeste,2022,Fem,"93,5%",4 a 5 anos
+Nordeste,2016,Total,"99,0%",6 a 14 anos
+Nordeste,2016,Masc,"99,1%",6 a 14 anos
+Nordeste,2016,Fem,"99,0%",6 a 14 anos
+Nordeste,2017,Total,"99,0%",6 a 14 anos
+Nordeste,2017,Masc,"99,0%",6 a 14 anos
+Nordeste,2017,Fem,"99,1%",6 a 14 anos
+Nordeste,2018,Total,"99,2%",6 a 14 anos
+Nordeste,2018,Masc,"99,2%",6 a 14 anos
+Nordeste,2018,Fem,"99,3%",6 a 14 anos
+Nordeste,2019,Total,"99,2%",6 a 14 anos
+Nordeste,2019,Masc,"99,2%",6 a 14 anos
+Nordeste,2019,Fem,"99,3%",6 a 14 anos
+Nordeste,2022,Total,"99,3%",6 a 14 anos
+Nordeste,2022,Masc,"99,2%",6 a 14 anos
+Nordeste,2022,Fem,"99,4%",6 a 14 anos
+Nordeste,2016,Total,"85,6%",15 a 17 anos
+Nordeste,2016,Masc,"86,0%",15 a 17 anos
+Nordeste,2016,Fem,"85,3%",15 a 17 anos
+Nordeste,2017,Total,"85,7%",15 a 17 anos
+Nordeste,2017,Masc,"86,6%",15 a 17 anos
+Nordeste,2017,Fem,"84,7%",15 a 17 anos
+Nordeste,2018,Total,"86,6%",15 a 17 anos
+Nordeste,2018,Masc,"87,7%",15 a 17 anos
+Nordeste,2018,Fem,"85,5%",15 a 17 anos
+Nordeste,2019,Total,"87,8%",15 a 17 anos
+Nordeste,2019,Masc,"88,5%",15 a 17 anos
+Nordeste,2019,Fem,"87,1%",15 a 17 anos
+Nordeste,2022,Total,"90,9%",15 a 17 anos
+Nordeste,2022,Masc,"90,8%",15 a 17 anos
+Nordeste,2022,Fem,"91,0%",15 a 17 anos
+Nordeste,2016,Total,"29,9%",18 a 24 anos
+Nordeste,2016,Masc,"29,2%",18 a 24 anos
+Nordeste,2016,Fem,"30,6%",18 a 24 anos
+Nordeste,2017,Total,"29,2%",18 a 24 anos
+Nordeste,2017,Masc,"29,2%",18 a 24 anos
+Nordeste,2017,Fem,"29,2%",18 a 24 anos
+Nordeste,2018,Total,"30,4%",18 a 24 anos
+Nordeste,2018,Masc,"30,5%",18 a 24 anos
+Nordeste,2018,Fem,"30,2%",18 a 24 anos
+Nordeste,2019,Total,"30,7%",18 a 24 anos
+Nordeste,2019,Masc,"29,8%",18 a 24 anos
+Nordeste,2019,Fem,"31,7%",18 a 24 anos
+Nordeste,2022,Total,"28,9%",18 a 24 anos
+Nordeste,2022,Masc,"27,9%",18 a 24 anos
+Nordeste,2022,Fem,"29,9%",18 a 24 anos
+Nordeste,2016,Total,"4,5%",25 anos ou mais
+Nordeste,2016,Masc,"3,5%",25 anos ou mais
+Nordeste,2016,Fem,"5,4%",25 anos ou mais
+Nordeste,2017,Total,"4,5%",25 anos ou mais
+Nordeste,2017,Masc,"3,7%",25 anos ou mais
+Nordeste,2017,Fem,"5,1%",25 anos ou mais
+Nordeste,2018,Total,"4,9%",25 anos ou mais
+Nordeste,2018,Masc,"4,2%",25 anos ou mais
+Nordeste,2018,Fem,"5,6%",25 anos ou mais
+Nordeste,2019,Total,"4,8%",25 anos ou mais
+Nordeste,2019,Masc,"4,1%",25 anos ou mais
+Nordeste,2019,Fem,"5,3%",25 anos ou mais
+Nordeste,2022,Total,"4,6%",25 anos ou mais
+Nordeste,2022,Masc,"4,1%",25 anos ou mais
+Nordeste,2022,Fem,"5,0%",25 anos ou mais
+Ceará,2016,Total,"29,7%",Total
+Ceará,2016,Masc,"30,1%",Total
+Ceará,2016,Fem,"29,2%",Total
+Ceará,2017,Total,"28,9%",Total
+Ceará,2017,Masc,"29,7%",Total
+Ceará,2017,Fem,"28,0%",Total
+Ceará,2018,Total,"28,9%",Total
+Ceará,2018,Masc,"29,8%",Total
+Ceará,2018,Fem,"28,1%",Total
+Ceará,2019,Total,"28,5%",Total
+Ceará,2019,Masc,"29,8%",Total
+Ceará,2019,Fem,"27,3%",Total
+Ceará,2022,Total,"26,7%",Total
+Ceará,2022,Masc,"27,0%",Total
+Ceará,2022,Fem,"26,3%",Total
+Ceará,2016,Total,"55,5%",0 a 5 anos
+Ceará,2016,Masc,"54,1%",0 a 5 anos
+Ceará,2016,Fem,"56,9%",0 a 5 anos
+Ceará,2017,Total,"55,6%",0 a 5 anos
+Ceará,2017,Masc,"54,9%",0 a 5 anos
+Ceará,2017,Fem,"56,4%",0 a 5 anos
+Ceará,2018,Total,"55,5%",0 a 5 anos
+Ceará,2018,Masc,"57,5%",0 a 5 anos
+Ceará,2018,Fem,"53,4%",0 a 5 anos
+Ceará,2019,Total,"52,4%",0 a 5 anos
+Ceará,2019,Masc,"52,8%",0 a 5 anos
+Ceará,2019,Fem,"52,0%",0 a 5 anos
+Ceará,2022,Total,"56,8%",0 a 5 anos
+Ceará,2022,Masc,"57,4%",0 a 5 anos
+Ceará,2022,Fem,"56,1%",0 a 5 anos
+Ceará,2016,Total,"33,6%",0 a 3 anos
+Ceará,2016,Masc,"33,2%",0 a 3 anos
+Ceará,2016,Fem,"34,1%",0 a 3 anos
+Ceará,2017,Total,"32,9%",0 a 3 anos
+Ceará,2017,Masc,"32,0%",0 a 3 anos
+Ceará,2017,Fem,"33,8%",0 a 3 anos
+Ceará,2018,Total,"34,7%",0 a 3 anos
+Ceará,2018,Masc,"37,1%",0 a 3 anos
+Ceará,2018,Fem,"32,4%",0 a 3 anos
+Ceará,2019,Total,"31,9%",0 a 3 anos
+Ceará,2019,Masc,"31,8%",0 a 3 anos
+Ceará,2019,Fem,"32,0%",0 a 3 anos
+Ceará,2022,Total,"36,3%",0 a 3 anos
+Ceará,2022,Masc,"36,3%",0 a 3 anos
+Ceará,2022,Fem,"36,2%",0 a 3 anos
+Ceará,2016,Total,"96,7%",4 a 5 anos
+Ceará,2016,Masc,"95,4%",4 a 5 anos
+Ceará,2016,Fem,"98,1%",4 a 5 anos
+Ceará,2017,Total,"97,8%",4 a 5 anos
+Ceará,2017,Masc,"97,8%",4 a 5 anos
+Ceará,2017,Fem,"97,8%",4 a 5 anos
+Ceará,2018,Total,"97,3%",4 a 5 anos
+Ceará,2018,Masc,"97,5%",4 a 5 anos
+Ceará,2018,Fem,"97,0%",4 a 5 anos
+Ceará,2019,Total,"96,9%",4 a 5 anos
+Ceará,2019,Masc,"97,6%",4 a 5 anos
+Ceará,2019,Fem,"96,3%",4 a 5 anos
+Ceará,2022,Total,"96,3%",4 a 5 anos
+Ceará,2022,Masc,"97,4%",4 a 5 anos
+Ceará,2022,Fem,"95,2%",4 a 5 anos
+Ceará,2016,Total,"98,7%",6 a 14 anos
+Ceará,2016,Masc,"98,5%",6 a 14 anos
+Ceará,2016,Fem,"98,8%",6 a 14 anos
+Ceará,2017,Total,"98,7%",6 a 14 anos
+Ceará,2017,Masc,"98,9%",6 a 14 anos
+Ceará,2017,Fem,"98,5%",6 a 14 anos
+Ceará,2018,Total,"99,5%",6 a 14 anos
+Ceará,2018,Masc,"99,3%",6 a 14 anos
+Ceará,2018,Fem,"99,7%",6 a 14 anos
+Ceará,2019,Total,"99,2%",6 a 14 anos
+Ceará,2019,Masc,"99,0%",6 a 14 anos
+Ceará,2019,Fem,"99,5%",6 a 14 anos
+Ceará,2022,Total,"99,0%",6 a 14 anos
+Ceará,2022,Masc,"99,1%",6 a 14 anos
+Ceará,2022,Fem,"98,9%",6 a 14 anos
+Ceará,2016,Total,"82,2%",15 a 17 anos
+Ceará,2016,Masc,"79,8%",15 a 17 anos
+Ceará,2016,Fem,"84,7%",15 a 17 anos
+Ceará,2017,Total,"85,8%",15 a 17 anos
+Ceará,2017,Masc,"85,4%",15 a 17 anos
+Ceará,2017,Fem,"86,3%",15 a 17 anos
+Ceará,2018,Total,"87,1%",15 a 17 anos
+Ceará,2018,Masc,"87,8%",15 a 17 anos
+Ceará,2018,Fem,"86,4%",15 a 17 anos
+Ceará,2019,Total,"88,2%",15 a 17 anos
+Ceará,2019,Masc,"87,8%",15 a 17 anos
+Ceará,2019,Fem,"88,6%",15 a 17 anos
+Ceará,2022,Total,"91,8%",15 a 17 anos
+Ceará,2022,Masc,"93,0%",15 a 17 anos
+Ceará,2022,Fem,"90,6%",15 a 17 anos
+Ceará,2016,Total,"25,3%",18 a 24 anos
+Ceará,2016,Masc,"24,5%",18 a 24 anos
+Ceará,2016,Fem,"26,1%",18 a 24 anos
+Ceará,2017,Total,"25,7%",18 a 24 anos
+Ceará,2017,Masc,"25,8%",18 a 24 anos
+Ceará,2017,Fem,"25,6%",18 a 24 anos
+Ceará,2018,Total,"26,3%",18 a 24 anos
+Ceará,2018,Masc,"24,9%",18 a 24 anos
+Ceará,2018,Fem,"27,9%",18 a 24 anos
+Ceará,2019,Total,"29,3%",18 a 24 anos
+Ceará,2019,Masc,"29,1%",18 a 24 anos
+Ceará,2019,Fem,"29,5%",18 a 24 anos
+Ceará,2022,Total,"26,1%",18 a 24 anos
+Ceará,2022,Masc,"23,6%",18 a 24 anos
+Ceará,2022,Fem,"28,8%",18 a 24 anos
+Ceará,2016,Total,"4,3%",25 anos ou mais
+Ceará,2016,Masc,"3,7%",25 anos ou mais
+Ceará,2016,Fem,"4,9%",25 anos ou mais
+Ceará,2017,Total,"4,4%",25 anos ou mais
+Ceará,2017,Masc,"3,4%",25 anos ou mais
+Ceará,2017,Fem,"5,4%",25 anos ou mais
+Ceará,2018,Total,"5,1%",25 anos ou mais
+Ceará,2018,Masc,"4,9%",25 anos ou mais
+Ceará,2018,Fem,"5,2%",25 anos ou mais
+Ceará,2019,Total,"4,6%",25 anos ou mais
+Ceará,2019,Masc,"4,1%",25 anos ou mais
+Ceará,2019,Fem,"5,0%",25 anos ou mais
+Ceará,2022,Total,"4,7%",25 anos ou mais
+Ceará,2022,Masc,"4,5%",25 anos ou mais
+Ceará,2022,Fem,"5,0%",25 anos ou mais
+Fortaleza,2016,Total,"28,9%",Total
+Fortaleza,2016,Masc,"30,4%",Total
+Fortaleza,2016,Fem,"27,6%",Total
+Fortaleza,2017,Total,"27,7%",Total
+Fortaleza,2017,Masc,"29,7%",Total
+Fortaleza,2017,Fem,"25,8%",Total
+Fortaleza,2018,Total,"28,7%",Total
+Fortaleza,2018,Masc,"30,7%",Total
+Fortaleza,2018,Fem,"26,9%",Total
+Fortaleza,2019,Total,"29,2%",Total
+Fortaleza,2019,Masc,"30,6%",Total
+Fortaleza,2019,Fem,"27,9%",Total
+Fortaleza,2022,Total,"25,8%",Total
+Fortaleza,2022,Masc,"26,5%",Total
+Fortaleza,2022,Fem,"25,2%",Total
+Fortaleza,2016,Total,"56,0%",0 a 5 anos
+Fortaleza,2016,Masc,"55,7%",0 a 5 anos
+Fortaleza,2016,Fem,"56,2%",0 a 5 anos
+Fortaleza,2017,Total,"51,1%",0 a 5 anos
+Fortaleza,2017,Masc,"52,0%",0 a 5 anos
+Fortaleza,2017,Fem,"50,1%",0 a 5 anos
+Fortaleza,2018,Total,"55,9%",0 a 5 anos
+Fortaleza,2018,Masc,"59,2%",0 a 5 anos
+Fortaleza,2018,Fem,"52,8%",0 a 5 anos
+Fortaleza,2019,Total,"52,5%",0 a 5 anos
+Fortaleza,2019,Masc,"52,6%",0 a 5 anos
+Fortaleza,2019,Fem,"52,4%",0 a 5 anos
+Fortaleza,2022,Total,"50,2%",0 a 5 anos
+Fortaleza,2022,Masc,"53,6%",0 a 5 anos
+Fortaleza,2022,Fem,"47,4%",0 a 5 anos
+Fortaleza,2016,Total,"34,6%",0 a 3 anos
+Fortaleza,2016,Masc,"35,6%",0 a 3 anos
+Fortaleza,2016,Fem,"33,4%",0 a 3 anos
+Fortaleza,2017,Total,"27,4%",0 a 3 anos
+Fortaleza,2017,Masc,"26,2%",0 a 3 anos
+Fortaleza,2017,Fem,"28,6%",0 a 3 anos
+Fortaleza,2018,Total,"36,5%",0 a 3 anos
+Fortaleza,2018,Masc,"44,7%",0 a 3 anos
+Fortaleza,2018,Fem,"28,0%",0 a 3 anos
+Fortaleza,2019,Total,"32,8%",0 a 3 anos
+Fortaleza,2019,Masc,"30,8%",0 a 3 anos
+Fortaleza,2019,Fem,"34,7%",0 a 3 anos
+Fortaleza,2022,Total,"31,1%",0 a 3 anos
+Fortaleza,2022,Masc,"34,1%",0 a 3 anos
+Fortaleza,2022,Fem,"28,5%",0 a 3 anos
+Fortaleza,2016,Total,"95,6%",4 a 5 anos
+Fortaleza,2016,Masc,"94,5%",4 a 5 anos
+Fortaleza,2016,Fem,"96,7%",4 a 5 anos
+Fortaleza,2017,Total,"93,7%",4 a 5 anos
+Fortaleza,2017,Masc,"93,6%",4 a 5 anos
+Fortaleza,2017,Fem,"93,9%",4 a 5 anos
+Fortaleza,2018,Total,"95,9%",4 a 5 anos
+Fortaleza,2018,Masc,"94,5%",4 a 5 anos
+Fortaleza,2018,Fem,"97,0%",4 a 5 anos
+Fortaleza,2019,Total,"93,8%",4 a 5 anos
+Fortaleza,2019,Masc,"94,4%",4 a 5 anos
+Fortaleza,2019,Fem,"93,0%",4 a 5 anos
+Fortaleza,2022,Total,"94,8%",4 a 5 anos
+Fortaleza,2022,Masc,"98,4%",4 a 5 anos
+Fortaleza,2022,Fem,"91,8%",4 a 5 anos
+Fortaleza,2016,Total,"98,1%",6 a 14 anos
+Fortaleza,2016,Masc,"97,6%",6 a 14 anos
+Fortaleza,2016,Fem,"98,7%",6 a 14 anos
+Fortaleza,2017,Total,"98,1%",6 a 14 anos
+Fortaleza,2017,Masc,"98,8%",6 a 14 anos
+Fortaleza,2017,Fem,"97,3%",6 a 14 anos
+Fortaleza,2018,Total,"99,6%",6 a 14 anos
+Fortaleza,2018,Masc,"99,3%",6 a 14 anos
+Fortaleza,2018,Fem,"99,8%",6 a 14 anos
+Fortaleza,2019,Total,"99,1%",6 a 14 anos
+Fortaleza,2019,Masc,"98,7%",6 a 14 anos
+Fortaleza,2019,Fem,"99,6%",6 a 14 anos
+Fortaleza,2022,Total,"97,9%",6 a 14 anos
+Fortaleza,2022,Masc,"97,7%",6 a 14 anos
+Fortaleza,2022,Fem,"98,0%",6 a 14 anos
+Fortaleza,2016,Total,"84,7%",15 a 17 anos
+Fortaleza,2016,Masc,"87,0%",15 a 17 anos
+Fortaleza,2016,Fem,"82,6%",15 a 17 anos
+Fortaleza,2017,Total,"90,1%",15 a 17 anos
+Fortaleza,2017,Masc,"89,0%",15 a 17 anos
+Fortaleza,2017,Fem,"91,2%",15 a 17 anos
+Fortaleza,2018,Total,"91,1%",15 a 17 anos
+Fortaleza,2018,Masc,"92,2%",15 a 17 anos
+Fortaleza,2018,Fem,"89,9%",15 a 17 anos
+Fortaleza,2019,Total,"89,8%",15 a 17 anos
+Fortaleza,2019,Masc,"90,7%",15 a 17 anos
+Fortaleza,2019,Fem,"88,5%",15 a 17 anos
+Fortaleza,2022,Total,"91,9%",15 a 17 anos
+Fortaleza,2022,Masc,"94,2%",15 a 17 anos
+Fortaleza,2022,Fem,"89,9%",15 a 17 anos
+Fortaleza,2016,Total,"32,9%",18 a 24 anos
+Fortaleza,2016,Masc,"32,6%",18 a 24 anos
+Fortaleza,2016,Fem,"33,2%",18 a 24 anos
+Fortaleza,2017,Total,"32,5%",18 a 24 anos
+Fortaleza,2017,Masc,"35,3%",18 a 24 anos
+Fortaleza,2017,Fem,"29,8%",18 a 24 anos
+Fortaleza,2018,Total,"34,5%",18 a 24 anos
+Fortaleza,2018,Masc,"33,5%",18 a 24 anos
+Fortaleza,2018,Fem,"35,6%",18 a 24 anos
+Fortaleza,2019,Total,"41,4%",18 a 24 anos
+Fortaleza,2019,Masc,"40,4%",18 a 24 anos
+Fortaleza,2019,Fem,"42,5%",18 a 24 anos
+Fortaleza,2022,Total,"30,9%",18 a 24 anos
+Fortaleza,2022,Masc,"27,3%",18 a 24 anos
+Fortaleza,2022,Fem,"34,8%",18 a 24 anos
+Fortaleza,2016,Total,"6,2%",25 anos ou mais
+Fortaleza,2016,Masc,"5,7%",25 anos ou mais
+Fortaleza,2016,Fem,"6,6%",25 anos ou mais
+Fortaleza,2017,Total,"5,6%",25 anos ou mais
+Fortaleza,2017,Masc,"4,8%",25 anos ou mais
+Fortaleza,2017,Fem,"6,3%",25 anos ou mais
+Fortaleza,2018,Total,"6,8%",25 anos ou mais
+Fortaleza,2018,Masc,"7,3%",25 anos ou mais
+Fortaleza,2018,Fem,"6,3%",25 anos ou mais
+Fortaleza,2019,Total,"7,3%",25 anos ou mais
+Fortaleza,2019,Masc,"6,4%",25 anos ou mais
+Fortaleza,2019,Fem,"8,0%",25 anos ou mais
+Fortaleza,2022,Total,"6,7%",25 anos ou mais
+Fortaleza,2022,Masc,"7,4%",25 anos ou mais
+Fortaleza,2022,Fem,"6,1%",25 anos ou mais
