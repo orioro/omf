@@ -78,7 +78,7 @@ Todo problema complexo exige coordenação entre diferentes setores para se pens
             gap="9"
             align="center"
           >
-            <Box
+{/*            <Box
               width={{
                 initial: '100%',
                 sm: '50%',
@@ -88,7 +88,7 @@ Todo problema complexo exige coordenação entre diferentes setores para se pens
                 Secretarias parceiras:
               </Heading>
               <img src="/img/home/parcerias_secretarias.png" />
-            </Box>
+            </Box>*/}
             <Box
               width={{
                 initial: '100%',
