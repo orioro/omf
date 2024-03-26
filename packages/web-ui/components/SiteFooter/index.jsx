@@ -66,7 +66,7 @@ export function SiteFooter() {
           }}
         >
           <Flex justify="center">
-            <img src="/img/footer_logos.png" />
+            <img src="/img/footer_logos.png" style={{ height: 80 }} />
           </Flex>
         </Container>
       </FooterBottom>
