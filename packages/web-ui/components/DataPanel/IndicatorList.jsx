@@ -68,6 +68,7 @@ const StyledCard = styled.div`
   cursor: pointer;
   background-color: white;
   color: var(--roxo);
+  box-shadow: var(--shadow-4);
 
   padding: 20px;
   border-radius: 10px;

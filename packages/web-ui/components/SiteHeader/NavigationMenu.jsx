@@ -24,7 +24,7 @@ const LinkList = styled.ul`
     align-items: center;
 
     > a {
-      color: white;
+      // color: white;
       white-space: nowrap;
       font-weight: bold;
 
@@ -54,8 +54,8 @@ const LinkList = styled.ul`
 const LINKS = [
   ['/#inicio', 'Início'],
   ['/#dados', 'Painel de Dados'],
-  ['/#', 'Metodologia'],
-  ['/#', 'Biblioteca'],
+  // ['/#', 'Metodologia'],
+  // ['/#', 'Biblioteca'],
   ['/#parcerias', 'Parcerias'],
 ]
 
@@ -77,7 +77,7 @@ export function NavigationMenu({}) {
         ))}
       </LinkList>
 
-      <Button asChild color="mostarda" style={{ fontWeight: 'bold' }}>
+      <Button asChild color="roxo" style={{ fontWeight: 'bold' }}>
         <Link href="/#">Serviços para Mulheres</Link>
       </Button>
     </Container>

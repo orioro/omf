@@ -9,8 +9,10 @@ export function Data() {
       id="dados"
       py="9"
       style={{
-        backgroundColor: 'var(--roxo)',
-        color: 'white',
+        // backgroundColor: 'var(--roxo)',
+        // backgroundColor: 'var(--mostarda)',
+        backgroundColor: 'var(--azul)',
+        // color: 'white',
       }}
     >
       <Container

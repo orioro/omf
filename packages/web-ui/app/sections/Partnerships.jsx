@@ -7,7 +7,8 @@ export function Partnerships({}) {
       id="parcerias"
       style={{
         paddingTop: 90,
-        backgroundColor: 'var(--mostarda-bg)',
+        // backgroundColor: 'var(--mostarda-bg)',
+        backgroundColor: 'var(--mostarda)',
         color: 'var(--roxo)',
       }}
     >

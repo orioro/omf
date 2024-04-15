@@ -6,7 +6,7 @@ import { Button, Container, Flex } from '@radix-ui/themes'
 const FooterContainer = styled.footer``
 
 const FooterTop = styled.div`
-  background-color: var(--mostarda-light);
+  background-color: var(--mostarda-bg);
 `
 
 const FooterBottom = styled.div`
@@ -50,7 +50,8 @@ export function SiteFooter() {
           </Flex>
           <Flex justify="between" mt="6">
             <Address>
-              Av. Dr. Silas Munguba, n. 1700 Campus do Itapery, Fortaleza - CE
+              R. Padre Pedro de Alencar, 2230 - Messejana, Fortaleza - CE,
+              60810-670
             </Address>
           </Flex>
         </Container>
