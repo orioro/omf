@@ -5,15 +5,15 @@
 #COPY ./packages/web-ui/out /usr/share/nginx/html
 
 #FROM docker.io/library/node:20
-FROM node:20
+FROM nodejs:20-ubi9
 
 WORKDIR /app
 
 COPY . .
 
-RUN npm install
+RUN yarn install
 RUN npx tsc --build --clean
-RUN npm build
+RUN yarn build
 
 EXPOSE 3000
 
