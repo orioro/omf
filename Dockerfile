@@ -6,11 +6,11 @@ COPY . .
 ## Copy the static website files to the Nginx document root
 #COPY ./packages/web-ui/out /usr/share/nginx/html
 
-RUN yarn install
-RUN npx tsc --build --clean
-RUN yarn build
+#RUN npm install
+#RUN npx tsc --build --clean
+#RUN npm build
 
 EXPOSE 3000
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
 
