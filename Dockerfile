@@ -11,9 +11,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install
+RUN npm install
 RUN npx tsc --build --clean
-RUN yarn build
+RUN npm build
 
 EXPOSE 3000
 
