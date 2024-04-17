@@ -1,0 +1,136 @@
+image: quay.io/openshift/origin-cli
+
+stages:
+  - scan
+  - deploy
+  - dev
+  - hom
+  - producao
+scansonar:   # This job runs in the test stage.
+  image: sonarsource/sonar-scanner-cli:4.6
+  stage: scan   # It only starts when the job in the build stage completes successfully.
+  script:
+    - sonar-scanner  -Dsonar.projectKey=$ORGAO-$PROJECT_NAME-$AMB -Dsonar.sources=. -Dsonar.host.url=https://dev-sonarqube.fortaleza.ce.gov.br -Dsonar.login=$SONAR_LOGIN -Dsonar.password=$SONAR_PASSWORD
+  tags:
+    - openshift-np
+  variables:
+    AMB: dev
+    EXECUTAR: ""
+  rules:
+    - if: $CI_COMMIT_BRANCH  == "dev" && $EXECUTAR == "qualidade"
+
+#DESENVOLVIMENTO
+.autdev: &autdev
+    before_script:
+    - oc login --server="$OPENSHIFT_SERVER_NP" --insecure-skip-tls-verify --username="$USERNAME_OCP" --password="$PASSWORD_OCP"
+    - oc project "$ORGAO-$PROJECT_NAME-$AMB" 2> /dev/null || oc adm new-project "$ORGAO-$PROJECT_NAME-$AMB" --node-selector=env=$AMB && oc project "$ORGAO-$PROJECT_NAME-$AMB"
+    - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
+    - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_DEV
+    script:
+    - oc get services $APP 2> /dev/null || oc new-app . --strategy=docker --name=$APP
+    - "oc start-build $APP --from-dir=. --follow"
+    - "oc get routes $APP 2> /dev/null || oc create route edge --service=$APP  --insecure-policy='None' --hostname=$APP-$AMB-$ORGAO.$APPDOMAIN"
+
+#HOMOLOGAÇÃO
+.authom: &authom
+    before_script:
+    - oc login --server="$OPENSHIFT_SERVER_NP" --insecure-skip-tls-verify --username="$USERNAME_OCP" --password="$PASSWORD_OCP"
+    - oc project "$ORGAO-$PROJECT_NAME-$AMB" 2> /dev/null || oc adm new-project "$ORGAO-$PROJECT_NAME-$AMB" --node-selector=env=$AMB
+    - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
+    - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_HOM
+    script:
+    - oc get services $APP 2> /dev/null || oc new-app . --strategy=docker --name=$APP
+    - "oc start-build $APP --from-dir=. --follow"
+    - "oc get routes $APP 2> /dev/null || oc create route edge --service=$APP  --insecure-policy='None' --hostname=$APP-$AMB-$ORGAO.$APPDOMAIN"
+
+#PRODUÇÃO
+.autprd: &autprd
+    before_script:
+    - oc login --server="$OPENSHIFT_SERVER_PRD" --insecure-skip-tls-verify --username="$USERNAME_OCP" --password="$PASSWORD_OCP"
+    - oc project "$ORGAO-$PROJECT_NAME-$AMB" 2> /dev/null || oc adm new-project "$ORGAO-$PROJECT_NAME-$AMB" --node-selector='env=publica'
+    - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
+    - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_PRD
+    script:
+    - oc get services $APP 2> /dev/null || oc new-app . --strategy=docker --name=$APP
+    - "oc start-build $APP --from-dir=. --follow"
+    - "oc get routes $APP 2> /dev/null || oc create route edge --service=$APP  --insecure-policy='None' --hostname=$APP-$AMB-$ORGAO.$APPDOMAIN"
+
+#DESENVOLVIMENTO
+dev: 
+  <<: *autdev
+  stage: dev
+  allow_failure: true
+  tags:
+    - openshift-np
+  variables:  
+    APP: $APP_NAME
+    AMB: dev
+    APPDOMAIN: apps.np-ocp.fortaleza.ce.gov.br
+    SECRET: $ORGAO-$PROJECT_NAME-$AMB-secret
+    SECRET_BUILD: $USERNAME_OCP
+    CONFIGMAP: $ORGAO-$PROJECT_NAME-$AMB-$APP_NAME-cfg-map
+
+  after_script:
+    - "oc apply -f $CONFIGMAP_DEV"
+    - "oc set env --from=configmap/$CONFIGMAP deployment/$APP"
+    #- "oc set resources deployments/$APP --limits=cpu=100m,memory=150Mi --requests=cpu=50m,memory=100Mi  2> /dev/null " 
+    #-  oc patch bc/$APP --patch '{"spec":{"resources":{"limits":{"cpu":"200m","memory":"750Mi"}}}}'  2> /dev/null 
+    #- "oc autoscale deployments/$APP --min=1 --max=5 --cpu-percent=80 —memory-percent=80"
+    - oc delete secret $SECRET_BUILD
+    - oc get route $AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br 2> /dev/null || oc create route edge $AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br --service=$APP --insecure-policy='None' --hostname=$AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br
+  rules:
+    - if: $CI_COMMIT_BRANCH  == "dev"
+
+#HOMOLOGAÇÃO
+hom: 
+  <<: *authom
+  stage: hom
+  allow_failure: true
+  tags:
+    - openshift-np
+  variables:  
+    APP: $APP_NAME
+    AMB: hom
+    APPDOMAIN: apps.np-ocp.fortaleza.ce.gov.br
+    SECRET: $ORGAO-$PROJECT_NAME-$AMB-secret
+    SECRET_BUILD: $USERNAME_OCP
+    CONFIGMAP: $ORGAO-$PROJECT_NAME-$AMB-$APP_NAME-cfg-map
+
+  after_script:
+    - "oc apply -f $CONFIGMAP_HOM"
+    - "oc set env --from=configmap/$CONFIGMAP deployment/$APP"
+    #- "oc set resources deployments/$APP --limits=cpu=100m,memory=150Mi --requests=cpu=50m,memory=100Mi  2> /dev/null " 
+    #-  oc patch bc/$APP --patch '{"spec":{"resources":{"limits":{"cpu":"200m","memory":"750Mi"}}}}'  2> /dev/null 
+    #- "oc autoscale deployments/$APP --min=1 --max=5 --cpu-percent=80 —memory-percent=80"
+    - oc delete secret $SECRET_BUILD
+    - oc get route $AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br 2> /dev/null || oc create route edge $AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br --service=$APP --insecure-policy='None' --hostname=$AMB-$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br
+  rules:
+    - if: $CI_COMMIT_BRANCH  == "hom"
+
+#PRODUÇÃO
+prd:
+  <<: *autprd
+  stage: producao
+  allow_failure: true
+  tags:
+    - openshift
+  variables:  
+    APP: $APP_NAME
+    AMB: prd
+    APPDOMAIN: apps.ocp.fortaleza.ce.gov.br
+    SECRET: $ORGAO-$PROJECT_NAME-$AMB-secret
+    SECRET_BUILD: $USERNAME_OCP
+    CONFIGMAP: $ORGAO-$PROJECT_NAME-$AMB-$APP_NAME-cfg-map
+     
+  after_script:
+    - "oc apply -f $CONFIGMAP_PRD"
+    - "oc set env --from=configmap/$CONFIGMAP deployment/$APP"
+    #- "oc set resources deployments/$APP --limits=cpu=100m,memory=150Mi --requests=cpu=50m,memory=100Mi  2> /dev/null " 
+    #-  oc patch bc/$APP --patch '{"spec":{"resources":{"limits":{"cpu":"200m","memory":"750Mi"}}}}'  2> /dev/null 
+    #- "oc autoscale deployments/$APP --min=1 --max=5 --cpu-percent=80 —memory-percent=80"
+    - oc delete secret $SECRET_BUILD
+    - oc get route $PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br 2> /dev/null || oc create route edge $PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br --service=$APP --insecure-policy='None' --hostname=$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br
+  rules:
+    - if: $CI_COMMIT_BRANCH  == "prd"
+    - when: manual
+
