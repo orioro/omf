@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel9/nodejs-20:1-34.1712566506
+FROM nodejs:20-ubi8
 
 USER root
 
