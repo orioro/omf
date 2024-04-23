@@ -4,6 +4,8 @@ USER root
 
 #RUN npm install -g yarn
 
+RUN npm install -g corepack
+
 RUN corepack enable
 
 WORKDIR /opt/app-root/src
