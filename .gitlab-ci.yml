@@ -98,7 +98,7 @@ hom:
 .autprd: &autprd
     before_script:
     - oc login --server=$OPENSHIFT_SERVER_PRD --insecure-skip-tls-verify --username=$USERNAME_OCP --password=$PASSWORD_OCP
-    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB" --node-selector='env=publica' && oc project $ORGAO-$PROJECT_NAME-$AMB
+    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB --node-selector='env=publica' && oc project $ORGAO-$PROJECT_NAME-$AMB
     - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
     - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_PRD
     script:
