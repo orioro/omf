@@ -15,7 +15,7 @@ const FortalezaHeaderContainer = styled.div`
 `
 
 const MainHeaderContainer = styled.div`
-  background-color: var(--mostarda);
+  background-color: var(--roxo-light);
 
   display: flex;
   align-items: center;

@@ -7,9 +7,9 @@ export function Intro({}) {
       id="inicio"
       style={{
         paddingTop: 90,
-        // backgroundColor: 'var(--roxo-light)',
-        backgroundColor: 'var(--mostarda-bg)',
-        // color: 'white',
+        backgroundColor: 'var(--roxo-light)',
+        // backgroundColor: 'var(--mostarda-bg)',
+        color: 'white',
       }}
     >
       <Container
