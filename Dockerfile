@@ -14,6 +14,7 @@ COPY . .
 
 RUN yarn install
 
+RUN yarn build
 
 USER 1001
 
