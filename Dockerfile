@@ -1,9 +1,18 @@
-# Use a lightweight base image
-FROM httpd
-USER root 
+FROM registry.redhat.io/rhel9/nodejs-20:1-34.1712566506
 
-# Copy the static website files to the Nginx document root
-COPY ./packages/web-ui/out /opt/app-root/src
+USER root
+
+RUN npm install -g yarn
+
+WORKDIR /opt/app-root/src
+
+COPY . .
+
+RUN yarn install
+
 
 USER 1001
-CMD ["/usr/bin/run-httpd"]
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]
