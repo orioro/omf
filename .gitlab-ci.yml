@@ -1,4 +1,4 @@
-image: quay.io/openshift/origin-cli
+image: quay.fortaleza.ce.gov.br/cogect/origin-cli
 
 stages:
   - scan
