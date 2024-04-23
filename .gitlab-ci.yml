@@ -46,8 +46,8 @@ dev:
     CONFIGMAP: $ORGAO-$PROJECT_NAME-$AMB-cfg-map
 
   after_script:
-    - oc apply -f $CONFIGMAP_DEV
-    - oc set env --from=configmap/$CONFIGMAP deployment/$APP
+    - oc apply -f $CONFIGMAP_DEV 
+    - oc set env --from=configmap/$CONFIGMAP deployment/$APP 
     #- "oc set resources deployments/$APP --limits=cpu=100m,memory=150Mi --requests=cpu=50m,memory=100Mi  2> /dev/null " 
     #-  oc patch bc/$APP --patch '{"spec":{"resources":{"limits":{"cpu":"200m","memory":"750Mi"}}}}'  2> /dev/null 
     #- "oc autoscale deployments/$APP --min=1 --max=5 --cpu-percent=80 —memory-percent=80"
@@ -61,7 +61,7 @@ dev:
 .authom: &authom
     before_script:
     - oc login --server=$OPENSHIFT_SERVER_NP --insecure-skip-tls-verify --username=$USERNAME_OCP --password=$PASSWORD_OCP
-    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB --node-selector=env=$AMB
+    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB --node-selector=env=$AMB && oc project $ORGAO-$PROJECT_NAME-$AMB
     - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
     - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_HOM
     script:
@@ -98,7 +98,7 @@ hom:
 .autprd: &autprd
     before_script:
     - oc login --server=$OPENSHIFT_SERVER_PRD --insecure-skip-tls-verify --username=$USERNAME_OCP --password=$PASSWORD_OCP
-    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB" --node-selector='env=publica'
+    - oc project $ORGAO-$PROJECT_NAME-$AMB 2> /dev/null || oc adm new-project $ORGAO-$PROJECT_NAME-$AMB" --node-selector='env=publica' && oc project $ORGAO-$PROJECT_NAME-$AMB
     - oc get secret $SECRET_BUILD 2> /dev/null || oc create secret generic  $SECRET_BUILD --from-literal=username=$USERNAME_OCP --from-literal=password=$PASSWORD_OCP
     - oc get configmap $CONFIGMAP 2> /dev/null || oc apply -f $CONFIGMAP_PRD
     script:
