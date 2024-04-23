@@ -5,6 +5,7 @@
   "license": "MIT",
   "packageManager": "yarn@4.0.2",
   "scripts": {
+    "start": "yarn workspaces foreach -A run start",
     "dev": "yarn workspaces foreach -A run dev",
     "build": "yarn workspaces foreach -A run build"
   },
