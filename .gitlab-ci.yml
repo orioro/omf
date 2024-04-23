@@ -129,6 +129,5 @@ prd:
     - oc delete secret $SECRET_BUILD
     - oc get route $PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br 2> /dev/null || oc create route edge $PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br --service=$APP --insecure-policy='None' --hostname=$PROJECT_NAME.$ORGAO.fortaleza.ce.gov.br
   rules:
-    - if: $CI_COMMIT_BRANCH  == "prd"
     - when: manual
 
