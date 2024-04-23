@@ -2,7 +2,9 @@ FROM nodejs:20-ubi8
 
 USER root
 
-RUN npm install -g yarn
+#RUN npm install -g yarn
+
+RUN corepack enable
 
 WORKDIR /opt/app-root/src
 
