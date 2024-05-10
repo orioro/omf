@@ -3,7 +3,8 @@
 import styled from 'styled-components'
 import { Container } from '@radix-ui/themes'
 import Link from 'next/link'
-import { NavigationMenu } from './NavigationMenu'
+import { DesktopNavigationMenu } from './DesktopNavigationMenu'
+import { MobileNavigationMenu } from './MobileNavigationMenu'
 
 const HeaderContainer = styled.header``
 
@@ -16,6 +17,7 @@ const FortalezaHeaderContainer = styled.div`
 
 const MainHeaderContainer = styled.div`
   background-color: var(--roxo-light);
+  color: white;
 
   display: flex;
   align-items: center;
@@ -64,7 +66,8 @@ export function SiteHeader() {
               <img src="/img/logo_OMF.svg" />
             </LogoLink>
 
-            <NavigationMenu />
+            <DesktopNavigationMenu />
+            <MobileNavigationMenu />
           </InnerContainer>
         </Container>
       </MainHeaderContainer>

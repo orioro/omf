@@ -2,6 +2,7 @@
 
 import styled from 'styled-components'
 import { Button, Container, Flex } from '@radix-ui/themes'
+import Link from 'next/link'
 
 const FooterContainer = styled.footer``
 
@@ -44,7 +45,9 @@ export function SiteFooter() {
 
             <nav>
               <Flex gap="3">
-                <Button color="roxo">Serviços para Mulheres</Button>
+                <Button color="roxo" asChild>
+                  <Link href="/servicos">Serviços para Mulheres</Link>
+                </Button>
               </Flex>
             </nav>
           </Flex>

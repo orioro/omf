@@ -1,0 +1,12 @@
+<svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="dossi&#195;&#170;" clip-path="url(#clip0_1243_4070)">
+<path id="Vector" d="M16.5975 3.87101V4.70434H1.21289V18.5719C1.21289 19.4052 1.89665 20.089 2.72998 20.089H24.2471C25.0804 20.089 25.7642 19.4052 25.7642 18.5719V4.70434V3.87101C25.7855 2.67443 24.824 1.71289 23.6274 1.71289H18.7556C17.559 1.71289 16.5975 2.67443 16.5975 3.87101Z" fill="#B1AEDF" stroke="#473EAD" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M16.8123 2.99609H2.49609V3.85079" stroke="#473EAD" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M12.1111 7.91016H4.20508V10.9016H12.1111V7.91016Z" fill="white" stroke="#473EAD" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1243_4070">
+<rect width="27" height="20" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

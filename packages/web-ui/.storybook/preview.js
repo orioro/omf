@@ -1,8 +1,12 @@
-import '@radix-ui/themes/styles.css'
+// import '@radix-ui/themes/styles.css'
+import './radix-ui-themes-styles.css'
+import '../app/styles/colors.css'
+import '../app/styles/radix-theme-config.css'
 import '../app/styles/globals.css'
 import { Theme, ThemePanel } from '@radix-ui/themes'
 
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import Providers from '../app/providers'
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -24,9 +28,10 @@ const preview = {
     (Story) => (
       <Theme>
         <main className={plus_jakarta_sans.className}>
-          <Story />
+          <Providers>
+            <Story />
+          </Providers>
         </main>
-        
       </Theme>
     ),
   ],

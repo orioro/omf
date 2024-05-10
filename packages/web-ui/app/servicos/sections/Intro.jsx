@@ -1,5 +1,64 @@
 import { Box, Container, Flex, Heading, Inset, Section } from '@radix-ui/themes'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { IndicatorContainer } from '@/components/IndicatorContainer'
+import { IndicatorCard } from '@/components/IndicatorCard'
+
+const INDICATORS = [
+  {
+    label: 'Aluguel Social Maria da Penha',
+    highlight: {
+      number: 40,
+      unit: 'beneficiadas',
+      text: 'entre 2022 e 2023 onde 90% delas são mulheres pretas e pardas.',
+    },
+    category: 'moradia',
+  },
+  {
+    label: 'Projeto Costurando Futuros',
+    highlight: {
+      number: 90,
+      unit: '% dos 900',
+      text: 'participantes do projeto foram ou são mulheres, desde 2022.',
+    },
+    category: 'trabalho',
+  },
+  {
+    label: 'Programa Nossas Guerreiras',
+    highlight: {
+      number: '11.169',
+      unit: 'mulheres',
+      text: 'beneficiadas de 2021 a 2023, para estímulá-las ao empreendedorismo.',
+    },
+    category: 'trabalho',
+  },
+  {
+    label: 'Casa Abrigo Margarida Alves',
+    highlight: {
+      number: '70',
+      unit: 'mulheres',
+      text: 'abrigadas em razão de risco iminente de morte por violência doméstica.',
+    },
+    category: 'violencia',
+  },
+  {
+    label: 'Grupo Espec. Maria da Penha',
+    highlight: {
+      number: '1.454',
+      unit: 'ações',
+      text: 'preventivas ou de intervenção na violência de gênero.',
+    },
+    category: 'violencia',
+  },
+  {
+    label: 'Casa Francisca Clotilde',
+    highlight: {
+      number: '11.521',
+      unit: 'mulheres',
+      text: 'atendidas em 2022 e 2023 pela assistência psicossocial.',
+    },
+    category: 'violencia',
+  },
+]
 
 export function Intro({}) {
   return (
@@ -16,7 +75,7 @@ export function Intro({}) {
           md: '9',
         }}
       >
-        <Flex direction="column" gap="9">
+        <Flex direction="column" gap="9" mb="6">
           <Flex
             direction={{
               initial: 'column-reverse',
@@ -49,58 +108,12 @@ O Observatório da Mulher de Fortaleza listou alguns serviços que a Prefeitura 
               <img src="/img/ilustracoes/ilustra_servicos.png" />
             </Box>
           </Flex>
-          <Flex
-            direction={{
-              initial: 'column',
-              sm: 'row',
-            }}
-            gap="9"
-            align="center"
-          >
-            <Box
-              width={{
-                initial: '100%',
-                sm: '50%',
-              }}
-            >
-              <Heading as="h6" size="2" style={{ marginBottom: 20 }}>
-                Idealizadores:
-              </Heading>
-              <img src="/img/home/parcerias_idealizadores.png" />
-            </Box>
-          </Flex>
-          <Flex
-            direction={{
-              initial: 'column',
-              sm: 'row',
-            }}
-            gap="9"
-            align="center"
-          >
-            <Box
-              width={{
-                initial: '100%',
-                sm: '50%',
-              }}
-            >
-              <Heading as="h6" size="2" style={{ marginBottom: 20 }}>
-                Secretarias parceiras:
-              </Heading>
-              <img src="/img/home/parcerias_secretarias.png" />
-            </Box>
-            <Box
-              width={{
-                initial: '100%',
-                sm: '50%',
-              }}
-            >
-              <Heading as="h6" size="2" style={{ marginBottom: 20 }}>
-                Parceiros institucionais:
-              </Heading>
-              <img src="/img/home/parcerias_institucionais.png" />
-            </Box>
-          </Flex>
         </Flex>
+        <IndicatorContainer>
+          {INDICATORS.map((indicator, index) => (
+            <IndicatorCard key={index} indicator={indicator} />
+          ))}
+        </IndicatorContainer>
       </Container>
     </Section>
   )
