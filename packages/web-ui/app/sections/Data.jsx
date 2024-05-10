@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Inset, Section } from '@radix-ui/themes'
+import { Box, Container, Heading, Section } from '@radix-ui/themes'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import Grid from '@mui/material/Unstable_Grid2'
 import { DataPanel } from '@/components/DataPanel'
@@ -9,10 +9,8 @@ export function Data() {
       id="dados"
       py="9"
       style={{
-        // backgroundColor: 'var(--roxo)',
-        // backgroundColor: 'var(--mostarda)',
         backgroundColor: 'var(--azul)',
-        // color: 'white',
+        color: 'var(--roxo)',
       }}
     >
       <Container
@@ -20,6 +18,7 @@ export function Data() {
           initial: '5',
           md: '9',
         }}
+        mb="9"
       >
         <Grid container spacing={6}>
           <Grid md={8} display="flex" alignItems="center">

@@ -34,6 +34,11 @@ export const CATEGORIES = [
     color: 'var(--salmao)',
     label: 'Violência',
   },
+  {
+    id: 'moradia',
+    color: 'var(--salmao-light)',
+    label: 'Moradia',
+  },
 ]
 
 export const CATEGORIES_BY_ID = CATEGORIES.reduce(

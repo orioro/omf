@@ -6,10 +6,17 @@ export function ControlMultiSelectPopover(props) {
   return (
     <ControlPopover
       {...props}
-      label={({ value }) =>
-        Array.isArray(value) && value.length > 0
-          ? `${props.label}: ${value.join(', ')}`
-          : `${props.label}: Todos`
+      label={
+        typeof props.label === 'function'
+          ? props.label
+          : ({ value }) =>
+              Array.isArray(value) && value.length > 0 ? (
+                <>
+                  {props.label}: {value.join(', ')}
+                </>
+              ) : (
+                <>{props.label}: Todos</>
+              )
       }
       renderControl={useMemo(
         () =>

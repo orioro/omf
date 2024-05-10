@@ -1,5 +1,5 @@
-import { ServicosPage } from './ServicosPage'
+import { PageClient } from './PageClient'
 
 export default function({}) {
-  return <ServicosPage />
+  return <PageClient />
 }
