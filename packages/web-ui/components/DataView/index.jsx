@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import { QueryControls } from './QueryControls'
 import { useMemo, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { dsvFormat } from 'd3-dsv'
+// import { dsvFormat } from 'd3-dsv'
 import { ChartDataSeries, groupEntries } from '../ChartDataSeries'
 import { Details } from './Details'
+import { fetchCSV } from '@/lib'
 
 const Container = styled.div`
   > * + * {
@@ -55,8 +56,7 @@ export function DataView({ spec, additionalChartOptions = {} }) {
   const dataQuery = useQuery({
     queryKey: [spec.data.src],
     queryFn: async function () {
-      const response = await fetch(spec.data.src)
-      return dsvFormat(',').parse(await response.text())
+      return fetchCSV(spec.data.src)
     },
   })
 

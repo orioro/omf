@@ -8,6 +8,7 @@ import { LayoutClient } from './LayoutClient'
 
 import Providers from './providers'
 import { DefaultTheme } from '@/components/DefaultTheme'
+import {headers} from 'next/headers'
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -24,6 +25,8 @@ export const metadata = {
 export const dynamic = 'force-dynamic'
 
 export default function RootLayout({ children }) {
+  const nonce = headers().get('x-nonce')
+
   return (
     <html lang="pt-BR">
       <head></head>

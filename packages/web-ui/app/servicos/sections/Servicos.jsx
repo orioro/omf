@@ -1,15 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
-import { csv } from 'd3-fetch'
+// import { csv } from 'd3-fetch'
 import { FilterableList } from '@/components/FilterableList'
 import { useMemo } from 'react'
 import { Button, Container, Flex, Section } from '@radix-ui/themes'
 import { OpenInNew } from '@mui/icons-material'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { fetchCSV } from '@/lib'
 
 export const ServicosInner = () => {
   const dataQuery = useQuery({
     queryKey: ['Servicos'],
-    queryFn: () => csv('/servicos/index.csv'),
+    queryFn: () => fetchCSV('/servicos/index.csv'),
   })
 
   const colDefs = useMemo(

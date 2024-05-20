@@ -1,16 +1,16 @@
 import { Button, Container, Flex, Section } from '@radix-ui/themes'
 
 import { useQuery } from '@tanstack/react-query'
-import { csv } from 'd3-fetch'
 import { FilterableList } from '@/components/FilterableList'
 import { useMemo } from 'react'
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined'
 import { OpenInNew } from '@mui/icons-material'
+import { fetchCSV } from '@/lib'
 
 const DocumentsInner = () => {
   const dataQuery = useQuery({
     queryKey: ['Documents'],
-    queryFn: () => csv('/biblioteca/index.csv'),
+    queryFn: () => fetchCSV('/biblioteca/index.csv'),
   })
 
   const colDefs = useMemo(
