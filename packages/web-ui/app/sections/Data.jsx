@@ -27,9 +27,16 @@ export function Data() {
                 O que os indicadores nos dizem sobre as mulheres de Fortaleza?
               </Heading>
               <MarkdownContent>
-                {`O Painel de Dados mostra 16 indicadores organizados em 7 categorias que representam os principais direitos e bem-estar das mulheres. Esperamos que esta seja uma ferramenta valiosa para compreender melhor as dinâmicas sociais e identificar as áreas de intervenção prioritárias para promover a equidade de gênero em Fortaleza.
-
-Ao clicar em cada cartão, é possível ver mais detalhes sobre aquele indicador, como gráficos, análises e outras informações relevantes.`}
+                {`O Painel de Dados mostra 42 indicadores, organizados ` +
+                  `em 14 temas de 6 categorias, que representam os ` +
+                  `principais direitos e bem-estar das mulheres. ` +
+                  `Esperamos que esta seja uma ferramenta valiosa para ` +
+                  `compreender melhor as dinâmicas sociais e identificar ` +
+                  `as áreas de intervenção prioritárias para promover a ` +
+                  `equidade de gênero em Fortaleza.\n\n` +
+                  `Ao clicar em cada cartão, é possível ver mais detalhes ` +
+                  `sobre aquele indicador, como gráficos, análises e outras ` +
+                  `informações relevantes.`}
               </MarkdownContent>
             </div>
           </Grid>

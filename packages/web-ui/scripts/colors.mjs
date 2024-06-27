@@ -25,7 +25,9 @@ const ACCENT_COLORS = {
     'white',
   ],
   verde: [
-    'rgba(17, 179, 159, 1)',
+    // Prev base:
+    // 'rgba(17, 179, 159, 1)',
+    'rgba(25, 155, 145, 1)',
     'rgba(94, 202, 189, 1)',
     'rgba(149, 232, 220, 1)',
     'white',

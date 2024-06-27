@@ -10,7 +10,7 @@ const HeaderContainer = styled.header``
 
 const FortalezaHeaderContainer = styled.div`
   height: 70px;
-  background-color: var(--mostarda);
+  background-color: var(--verde);
   display: flex;
   align-items: center;
 `

@@ -6,6 +6,7 @@ import { IndicatorCard } from '@/components/IndicatorCard'
 const INDICATORS = [
   {
     label: 'Aluguel Social Maria da Penha',
+    href: '/servicos/01-aluguel-social-maria-da-penha.pdf',
     highlight: {
       number: 40,
       unit: 'beneficiadas',
@@ -14,7 +15,8 @@ const INDICATORS = [
     category: 'moradia',
   },
   {
-    label: 'Projeto Costurando Futuros',
+    label: 'Projeto Costurando o Futuro',
+    href: '/servicos/02-03-autonomia-economica-rompendo-ciclo-da-violencia.pdf',
     highlight: {
       number: 90,
       unit: '% dos 900',
@@ -24,6 +26,7 @@ const INDICATORS = [
   },
   {
     label: 'Programa Nossas Guerreiras',
+    href: '/servicos/02-03-autonomia-economica-rompendo-ciclo-da-violencia.pdf',
     highlight: {
       number: '11.169',
       unit: 'mulheres',
@@ -33,6 +36,7 @@ const INDICATORS = [
   },
   {
     label: 'Casa Abrigo Margarida Alves',
+    href: '/servicos/04-casa-abrigo-margarida-alves.pdf',
     highlight: {
       number: '70',
       unit: 'mulheres',
@@ -42,6 +46,7 @@ const INDICATORS = [
   },
   {
     label: 'Grupo Espec. Maria da Penha',
+    href: '/servicos/05-grupo-especializado-maria-da-penha.pdf',
     highlight: {
       number: '1.454',
       unit: 'ações',
@@ -50,7 +55,8 @@ const INDICATORS = [
     category: 'violencia',
   },
   {
-    label: 'Casa Francisca Clotilde',
+    label: 'CRAM – Francisca Clotilde',
+    href: '/servicos/06-cram-casa-francisca-clotilde.pdf',
     highlight: {
       number: '11.521',
       unit: 'mulheres',
@@ -111,7 +117,20 @@ O Observatório da Mulher de Fortaleza listou alguns serviços que a Prefeitura 
         </Flex>
         <IndicatorContainer>
           {INDICATORS.map((indicator, index) => (
-            <IndicatorCard key={index} indicator={indicator} />
+            <a
+              href={indicator.href}
+              target="_blank"
+              rel="noreferrer noopener"
+              key={index}
+              style={{
+                display: 'flex',
+              }}
+            >
+              <IndicatorCard
+                clickable={Boolean(indicator.href)}
+                indicator={indicator}
+              />
+            </a>
           ))}
         </IndicatorContainer>
       </Container>

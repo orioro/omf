@@ -8,7 +8,7 @@ export function Partnerships({}) {
       style={{
         paddingTop: 90,
         // backgroundColor: 'var(--mostarda-bg)',
-        backgroundColor: 'var(--mostarda)',
+        backgroundColor: 'var(--verde)',
         color: 'var(--roxo)',
       }}
     >
