@@ -1,4 +1,12 @@
-import { Box, Container, Flex, Heading, Inset, Section } from '@radix-ui/themes'
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Inset,
+  Section,
+  Text,
+} from '@radix-ui/themes'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 export function Intro({}) {
@@ -44,12 +52,25 @@ Temos como meta influenciar e aproximar pesquisadores, tomadores de decisão e c
             </MarkdownContent>
           </Box>
           <Box
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
             width={{
               initial: '100%',
               sm: '50%',
             }}
           >
             <img src="/img/home/maria_da_penha.jpeg" />
+            <Text
+              mt="6"
+              style={{
+                fontSize: '.8rem',
+              }}
+            >
+              Maria da Penha, mulher fortalezense
+            </Text>
           </Box>
         </Flex>
       </Container>
