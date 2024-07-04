@@ -39,6 +39,8 @@ const InnerContainer = styled.div`
 export function SiteHeader() {
   return (
     <HeaderContainer>
+      {/*
+      Temporarily remove
       <FortalezaHeaderContainer>
         <Container
           px={{
@@ -53,7 +55,7 @@ export function SiteHeader() {
             />
           </InnerContainer>
         </Container>
-      </FortalezaHeaderContainer>
+      </FortalezaHeaderContainer>*/}
       <MainHeaderContainer>
         <Container
           px={{

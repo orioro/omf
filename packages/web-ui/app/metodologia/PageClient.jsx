@@ -70,11 +70,11 @@ Depois, seguimos com 2 frentes em paralelo: (1) foram realizadas pesquisas de ca
             title="1.3. Cocriação"
             content={`Uma vez concluídas as etapas de entendimento inicial e diagnóstico, o Observatório da Mulher de Fortaleza adotou uma abordagem colaborativa na fase de cocriação. Neste estágio, foram realizadas oficinas participativas e conversas bilaterais envolvendo 23 atoras relevantes para o projeto, e o resultado foi a definição do formato e características que o projeto e a plataforma deveriam ter, quais tipos de conteúdos deveriam ser incluídos e as ações estratégicas necessárias para viabilizar a implementação do observatório.
 
-Além disso, foram listados mais de 170 indicadores que poderiam compor o observatório, no qual, para a primeira fase do projeto, fizemos um esforço de redução para os 16 apresentados do Painel de Dados.`}
+Além disso, foram listados mais de 170 temas que poderiam compor o observatório, no qual, para a primeira fase do projeto, fizemos um esforço de redução para os 14 apresentados do Painel de Dados.`}
           />
           <SecondarySection
             title="1.4. Implementação"
-            content={`Por fim, com as diretrizes estabelecidas e os indicadores definidos, o Observatório da Mulher de Fortaleza partiu para a sua fase de implementação. Aqui, desenvolvemos a plataforma digital do OMF, que possui um painel de dados e detalhes de cada um dos 16 indicadores, biblioteca com materiais relativos a temas pertinentes à mulheres e informações sobre os serviços ofertados pelo município.
+            content={`Por fim, com as diretrizes estabelecidas e os indicadores definidos, o Observatório da Mulher de Fortaleza partiu para a sua fase de implementação. Aqui, desenvolvemos a plataforma digital do OMF, que possui um painel de dados e detalhes de cada um dos 14 indicadores, biblioteca com materiais relativos a temas pertinentes à mulheres e informações sobre os serviços ofertados pelo município.
 
 Além disso, e pensando para além da plataforma e o que fazer com os dados aqui sistematizados, também estamos oferecendo apoio estratégico junto às pastas finalísticas da Prefeitura para a construção de planejamentos e orçamentos sensíveis a gênero e raça.`}
           />
@@ -83,7 +83,7 @@ Além disso, e pensando para além da plataforma e o que fazer com os dados aqui
 
           <SecondarySection
             title="2.1. Pesquisa Descritiva"
-            content={`Após a definição dos 16 indicadores a serem incluídos no Painel de Dados do Observatório, iniciamos nossa etapa de coleta e análise de dados. Para isso, construímos o desenho de nossa pesquisa utilizando uma metodologia descritiva.
+            content={`Após a definição dos 14 indicadores a serem incluídos no Painel de Dados do Observatório, iniciamos nossa etapa de coleta e análise de dados. Para isso, construímos o desenho de nossa pesquisa utilizando uma metodologia descritiva.
 
 A pesquisa descritiva envolve a coleta, organização, análise e interpretação de dados para descrever características ou padrões em uma determinada população ou fenômeno, de acordo com os objetivos. No caso do Observatório, a pesquisa foi realizada buscando responder à seguinte pergunta:
 

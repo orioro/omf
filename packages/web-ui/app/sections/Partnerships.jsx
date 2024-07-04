@@ -51,6 +51,8 @@ Todo problema complexo exige coordenação entre diferentes setores para se pens
               <img src="/img/home/ilustra_parcerias.png" />
             </Box>
           </Flex>
+          {/*
+          Temporarily remove
           <Flex
             direction={{
               initial: 'column',
@@ -70,7 +72,7 @@ Todo problema complexo exige coordenação entre diferentes setores para se pens
               </Heading>
               <img src="/img/home/parcerias_idealizadores.png" />
             </Box>
-          </Flex>
+          </Flex>*/}
           <Flex
             direction={{
               initial: 'column',
@@ -79,7 +81,7 @@ Todo problema complexo exige coordenação entre diferentes setores para se pens
             gap="9"
             align="center"
           >
-{/*            <Box
+            {/*            <Box
               width={{
                 initial: '100%',
                 sm: '50%',

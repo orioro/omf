@@ -50,7 +50,7 @@ const IND_10_vagas_em_creches = {
   category: 'educacao',
   label: 'Vagas em creches',
   highlight: {
-    number: 'Apenas 31%',
+    number: '31%',
     text: 'das crianças entre 0 a 3 anos frequentam creche em 2022.',
   },
   leadText: 'Qual a porcentagem de crianças fortalezenses fora das creches?',

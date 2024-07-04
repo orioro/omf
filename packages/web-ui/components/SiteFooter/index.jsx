@@ -59,6 +59,8 @@ export function SiteFooter() {
           </Flex>
         </Container>
       </FooterTop>
+      {/*
+      Temporarily remove
       <FooterBottom>
         <Container
           py={{
@@ -73,7 +75,7 @@ export function SiteFooter() {
             <img src="/img/footer_logos.png" style={{ height: 80 }} />
           </Flex>
         </Container>
-      </FooterBottom>
+      </FooterBottom>*/}
     </FooterContainer>
   )
 }
